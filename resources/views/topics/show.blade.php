@@ -46,10 +46,10 @@
           @can('update', $topic)
             <div class="operate">
               <hr>
-              <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-outline-secondary btn-sm" role="button">
+              <a href="{{ route('topics.edit', $topic) }}" class="btn btn-outline-secondary btn-sm" role="button">
                 <i class="far fa-edit"></i> 編輯
               </a>
-              <form action="{{ route('topics.destroy', $topic->id) }}" method="post"
+              <form action="{{ route('topics.destroy', $topic) }}" method="post"
                     style="display: inline-block;"
                     onsubmit="return confirm('您確定要刪除嗎？');">
                 {{ csrf_field() }}
