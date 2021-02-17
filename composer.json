@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "anhskohbo/no-captcha": "^3.3",
         "codingyu/ueditor": "^3.0",
         "encore/laravel-admin": "1.7.16",
         "fideloper/proxy": "^4.4",
@@ -21,7 +22,6 @@
         "laravel/socialite": "^5.1",
         "laravel/tinker": "^2.5",
         "league/flysystem-aws-s3-v3": "^1.0",
-        "mews/captcha": "~3.0",
         "mews/purifier": "~3.3",
         "overtrue/laravel-lang": "~4.0",
         "spatie/laravel-activitylog": "^3.16",
