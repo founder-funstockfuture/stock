@@ -12,6 +12,7 @@ use App\Handlers\ImageUploadS3Handler;
 use Carbon\Carbon;
 use App\Exceptions\InvalidRequestException;
 
+
 class TopicsController extends Controller
 {
     public function __construct()
@@ -60,6 +61,11 @@ class TopicsController extends Controller
 
 	public function store(TopicRequest $request, Topic $topic)
 	{
+        // 移除 a tag 的所有內容
+        $request->merge([
+            'body' => remove_tag_cotent($request->body, '<a', '</a>'),
+        ]);
+
         $topic->fill($request->all());
         $topic->user_id = Auth::id();
         $topic->save();
@@ -79,6 +85,12 @@ class TopicsController extends Controller
     public function update(TopicRequest $request, Topic $topic)
     {
         $this->authorize('update', $topic);
+
+        // 移除 a tag 的所有內容
+        $request->merge([
+            'body' => remove_tag_cotent($request->body, '<a', '</a>'),
+        ]);
+        
         $topic->update($request->all());
 
         return redirect()->to($topic->link())->with('success', '更新成功！');
