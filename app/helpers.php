@@ -95,3 +95,24 @@ function zip_distance($zip){
 
 	return $Distance;
 }
+
+
+// 取得 tag 內容(含 tag)
+function parse_array($string, $beg_tag, $close_tag)
+{
+    preg_match_all("($beg_tag(.*)$close_tag)siU", $string, $matching_data);
+    return $matching_data[0];
+}
+
+// 移除所有提供的 tag 內容(含 tag)
+function remove_tag_cotent($string, $open_tag, $close_tag)
+{
+	# Get array of things that should be removed from the input string
+	$remove_array = parse_array($string, $open_tag, $close_tag);
+
+	# Remove each occurrence of each array element from string;
+	for($xx=0; $xx<count($remove_array); $xx++)
+		$string = str_replace($remove_array, "", $string);
+
+	return $string;
+}
