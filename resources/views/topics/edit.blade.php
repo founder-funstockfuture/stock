@@ -14,7 +14,7 @@
 
           <hr>
 
-            <form action="{{ route('topics.update', $topic->id) }}" method="POST" accept-charset="UTF-8">
+            <form action="{{ route('topics.update', $topic) }}" method="POST" accept-charset="UTF-8">
               <input type="hidden" name="_method" value="PUT">
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
 

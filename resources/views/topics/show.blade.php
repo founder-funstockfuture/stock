@@ -64,11 +64,103 @@
         </div>
       </div>
 
-      {{-- 用戶回覆列表 --}}
+      {{-- 用戶留言列表 --}}
       <div class="card topic-reply mt-4">
           <div class="card-body">
-              @includeWhen(Auth::check(), 'topics._reply_box', ['topic' => $topic])
-              @include('topics._reply_list', ['replies' => $replies])
+
+          @if(Auth::check())
+            @include('shared._error')
+
+            <div class="reply-box">
+              <form action="{{ route('replies.store') }}" method="POST" accept-charset="UTF-8">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="topic_id" value="{{ $topic->id }}">
+                <div class="form-group">
+                  <textarea class="form-control" rows="3" placeholder="分享你的見解~" name="content"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-share mr-1"></i> 留言</button>
+              </form>
+            </div>
+            <hr>
+          @endif
+
+          <ul class="list-unstyled">
+            @foreach ($replies as $index => $reply)
+              <li class=" media" name="reply{{ $reply->id }}" id="reply{{ $reply->id }}">
+                <div class="media-left">
+                  <a href="{{ route('users.show', [$reply->user]) }}">
+                    <img class="media-object img-thumbnail mr-3" alt="{{ $reply->user->name }}" src="{{ $reply->user->avatar }}" style="width:48px;height:48px;" />
+                  </a>
+                </div>
+
+                <div class="media-body">
+                  <div class="media-heading mt-0 mb-1 text-secondary">
+                    <a href="{{ route('users.show', [$reply->user]) }}" title="{{ $reply->user->name }}">
+                      {{ $reply->user->name }}
+                    </a>
+                    <span class="text-secondary"> • </span>
+                    <span class="meta text-secondary" title="{{ $reply->created_at }}">{{ $reply->created_at->diffForHumans() }}</span>
+
+                    {{-- 回覆刪除按鈕 --}}
+                    @can('destroy', $reply)
+                      <span class="meta float-right">
+                        <form action="{{ route('replies.destroy', $reply->id) }}"
+                            onsubmit="return confirm('確定要刪除此評論？');"
+                            method="post">
+                          {{ csrf_field() }}
+                          {{ method_field('DELETE') }}
+                          <button type="submit" class="btn btn-default btn-xs pull-left text-secondary">
+                            <i class="far fa-trash-alt"></i>
+                          </button>
+                        </form>
+                      </span>
+                    @endcan
+                    
+                  </div>
+                  <div class="reply-content text-secondary">
+                    {!! $reply->content !!}
+                  </div>
+                    {{-- 用戶留言回覆列表 --}}
+                    @foreach ($reply->replies2 as $index2 => $reply2)
+                      <div class="media mt-3">
+                        <a class="mr-3" href="#">
+                          <img src="{{ $reply2->user->avatar }}" class="mr-3" style="width:36px;height:36px;">
+                        </a>
+                        <div class="media-body">
+                          <h5 class="mt-0">{{ $reply2->user->name }}</h5>
+                          {!! $reply2->content !!}
+                        </div>
+                      </div>
+                    @endforeach
+
+                    @if(Auth::check())
+                      @include('shared._error')
+
+                      <div class="reply-box  mt-3">
+                        <form action="{{ route('replies2.store') }}" method="POST" accept-charset="UTF-8">
+                          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                          <input type="hidden" name="reply_id" value="{{ $reply->id }}">
+                          <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="回覆內容{{ $reply->id }}" name="content"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-sm">
+                          <i class="fa fa-share mr-1"></i> 回覆</button>
+                        </form>
+                      </div>
+                      <hr>
+                    @endif
+
+                </div>
+              </li>
+
+              @if ( ! $loop->last)
+                <hr>
+              @endif
+
+            @endforeach
+          </ul>
+
+
           </div>
       </div>
 

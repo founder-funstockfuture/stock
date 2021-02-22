@@ -6,27 +6,22 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
-class Reply extends Model
+class Reply2 extends Model
 {
     use HasFactory;
     use SoftDeletes;
 
+    protected $table = 'replies2';
 
-    protected $fillable = ['topic_id','user_id','content'];
+    protected $fillable = ['reply_id','user_id','content'];
 
-    public function topic()
+    public function reply()
     {
-        return $this->belongsTo(Topic::class);
+        return $this->belongsTo(Reply2::class);
     }
 
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-
-    public function replies2()
-    {
-        return $this->hasMany(Reply2::class);
-    }
-
 }
