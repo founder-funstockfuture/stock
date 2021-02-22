@@ -48,7 +48,7 @@ class TopicsController extends Controller
             $topic = Topic::published()->findOrFail($topic->id);
         }
 
-        $replies = $topic->replies()->with('user')->get();
+        $replies = $topic->replies()->with('user','replies2')->get();
         
         return view('topics.show', compact('topic','replies'));
     }

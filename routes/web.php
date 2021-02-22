@@ -67,6 +67,8 @@ Route::group(['middleware' => ['auth']], function() {
         Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
         // 文章回復
         Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
+        // 留言回復
+        Route::resource('replies2', 'Replies2Controller', ['only' => ['store', 'destroy']]);
         // 文章收藏
         Route::post('topics/{topic}/favorite', 'TopicsController@favor')->name('topics.favor');
         Route::delete('topics/{topic}/favorite', 'TopicsController@disfavor')->name('topics.disfavor');
