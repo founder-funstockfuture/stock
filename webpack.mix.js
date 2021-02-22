@@ -5,4 +5,6 @@ mix.js('resources/js/app.js', 'public/js')
     .sourceMaps()
     .version()
     .copyDirectory('resources/editor/js', 'public/js')
-    .copyDirectory('resources/editor/css', 'public/css');
+	.copyDirectory('resources/editor/css', 'public/css')
+    .copyDirectory('resources/js/owl.carousel.min.js', 'public/js')
+    .copyDirectory('resources/css/owl.carousel.min.css', 'public/css');
