@@ -23,7 +23,7 @@
 
     @include('layouts._header')
 
-    <div class="container">
+    <div class="container_parent">
 
       @include('shared._messages')
 
@@ -36,7 +36,8 @@
 
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
-
+  <script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
+  
   @yield('scriptsAfterJs')
 
 </body>

@@ -21,18 +21,18 @@
                 </div>
 
             </div>
-        </div>
 
-        <div class="copyright-reserved">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <div class="copyright-text">
-                      版權所有 Fun股網 永豐富財經媒體資訊有限公司 ©2021-<script>document.write(new Date().getFullYear());</script>2021 FunStockFuture.com All rights reserved. </div>
-                      
-                      <div class="copyright-text">
-                      台北市中山區中山北路一段145號9樓 諮詢專線 02-2767-1556 客服信箱 service@funstockfuture.com
-                      </div>
-                  </div>
-              </div>
+            <div class="copyright-reserved">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                        版權所有 Fun股網 永豐富財經媒體資訊有限公司 ©2021-<script>document.write(new Date().getFullYear());</script>2021 FunStockFuture.com All rights reserved. </div>
+                        
+                        <div class="copyright-text">
+                        台北市中山區中山北路一段145號9樓 諮詢專線 02-2767-1556 客服信箱 service@funstockfuture.com
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
