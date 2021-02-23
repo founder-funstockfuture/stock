@@ -1,4 +1,6 @@
 {
-    "/js/app.js": "/js/app.js?id=1332cbecf22085128f99",
-    "/css/app.css": "/css/app.css?id=11de2aeb87777b99d837"
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/owl.carousel.min.js": "/js/owl.carousel.min.js?id=47c357c05cb99cedbac2",
+    "/css/owl.carousel.min.css": "/css/owl.carousel.min.css?id=b9755c9c2613c455154c"
 }
