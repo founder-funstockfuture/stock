@@ -17174,7 +17174,9 @@ html .header-section .nav-item .slicknav_nav .dropdown a {
 }
 
 .root-page .vertical-tabs {
-  width: 80%;
+  width: 90%;
+  padding-left: 35px;
+  box-sizing: border-box;
 }
 
 .root-page .vertical-tabs .nav-pills .nav-link.active,
@@ -17193,12 +17195,11 @@ html .header-section .nav-item .slicknav_nav .dropdown a {
 .root-page .vertical-tabs .col-1 {
   padding-left: 0;
   padding-right: 0;
-  text-align: -webkit-right;
+  margin-right: -35px;
 }
 
 .root-page .vertical-tabs .col-1 .nav {
   border: 1px solid #ccc;
-  box-sizing: border-box;
   width: 65%;
 }
 
@@ -17221,6 +17222,10 @@ html .header-section .nav-item .slicknav_nav .dropdown a {
   border: 1px solid #bbb;
 }
 
+.root-page .good-articles {
+  width: 90%;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -17241,40 +17246,42 @@ html .header-section .nav-item .slicknav_nav .dropdown a {
   margin-top: 30px;
 }
 
-.footer .footer-left ul li,
-.footer .footer-right ul li {
+.footer .container .footer-left ul li,
+.footer .container .footer-right ul li {
   list-style: none;
   color: #b2b2b2;
   font-size: 16px;
   line-height: 30px;
 }
 
-.footer .copyright-reserved {
+.footer .container .footer-left ul li ul li,
+.footer .container .footer-right ul li ul li {
+  font-size: 0.9rem;
+}
+
+.footer .container .footer-yellow {
+  color: #FFCC00;
+}
+
+.footer .container .copyright-reserved {
   border-top: 1px solid #303030;
   padding: 15px 0;
   margin-top: 15px;
+  text-align: center;
 }
 
-.footer .copyright-reserved .copyright-text {
-  font-size: 16px;
+.footer .container .copyright-reserved .copyright-text {
+  font-size: 0.9rem;
   color: #b2b2b2;
   text-align: center;
 }
 
-.footer .copyright-reserved .copyright-text a {
+.footer .container .copyright-reserved .copyright-text a {
   color: #b2b2b2;
 }
 
-.footer .copyright-reserved .copyright-text i {
-  color: #cc2424;
-}
-
-.footer .copyright-reserved .copyright-text a:hover {
+.footer .container .copyright-reserved .copyright-text a:hover {
   color: #e7ab3c;
-}
-
-.footer .copyright-reserved .payment-pic {
-  float: right;
 }
 
 /* User register page */

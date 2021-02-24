@@ -166,7 +166,9 @@ html {
     }
     
     .vertical-tabs{
-      width: 80%;
+      width: 90%;
+      padding-left: 35px;
+      box-sizing:border-box;
       .nav-pills .nav-link.active, .nav-pills > .nav-link {
         color: #000;
         background-color: #f5f6f9;
@@ -179,11 +181,10 @@ html {
       .col-1{
         padding-left:0;
         padding-right:0;
+        margin-right: -35px;
         
-        text-align: -webkit-right;
         .nav{
           border:1px solid #ccc;
-          box-sizing: border-box;
           width:65%;
           .nav-pills .nav-link {
               border-radius: 0.1rem;
@@ -207,9 +208,20 @@ html {
 
       }
 
+    }
+
+    .good-articles{
+      width: 90%;
+
 
 
     }
+
+
+
+
+
+
 
   }
 
@@ -233,43 +245,53 @@ html {
     .container{
       max-width: 98%;
       margin-top: 30px;
+
+      .footer-left ul li, .footer-right ul li{
+        list-style: none;
+        color: #b2b2b2;
+        font-size: 16px;
+        line-height: 30px;
+        ul li{
+          font-size: 0.9rem;
+        }
+      }
+      
+      .footer-yellow{
+        color:#FFCC00;
+  
+      }
+  
+      .copyright-reserved {
+        border-top: 1px solid #303030;
+        padding: 15px 0;
+        margin-top: 15px;
+        text-align: center;
+        .copyright-text {
+          font-size: 0.9rem;
+          color: #b2b2b2;
+          text-align: center;
+        }
+        
+        .copyright-text a {
+          color: #b2b2b2;
+        }
+        
+        .copyright-text a:hover {
+          color: #e7ab3c;
+        }
+        
+  
+  
+  
+      }
+
+
+
     }
 
-    .footer-left ul li, .footer-right ul li{
-      list-style: none;
-      color: #b2b2b2;
-      font-size: 16px;
-      line-height: 30px;
-    }
+
     
 
-    .copyright-reserved {
-      border-top: 1px solid #303030;
-      padding: 15px 0;
-      margin-top: 15px;
-    }
-    
-    .copyright-reserved .copyright-text {
-      font-size: 16px;
-      color: #b2b2b2;
-      text-align: center;
-    }
-    
-    .copyright-reserved .copyright-text a {
-      color: #b2b2b2;
-    }
-    
-    .copyright-reserved .copyright-text i {
-      color: #cc2424;
-    }
-    
-    .copyright-reserved .copyright-text a:hover {
-      color: #e7ab3c;
-    }
-    
-    .copyright-reserved .payment-pic {
-      float: right;
-    }
 
 
   }
