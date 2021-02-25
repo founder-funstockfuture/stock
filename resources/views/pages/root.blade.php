@@ -17,7 +17,7 @@
 
 
 
-  <div id="carouselControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselControls" class="carousel main-slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
       <li data-target="#carouselControls" data-slide-to="1"></li>
@@ -44,7 +44,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+  </div>
 
 
   <div class="vertical-tabs my-4 d-none d-lg-block">
@@ -122,6 +122,7 @@
     <div class="row justify-content-center first-article">
       <div class="col-lg-3 p-0">
         <div class="about__article__bg" style="background-image: url(img/photo01.png);"></div>
+        <div class="overtag">最新<br>文章<br><span class="append">News!</span></div>
         <div class="overlay">【台積600】市值超越股神巴菲特公司躍居 全球第10大</div>
       </div>
       <div class="col-lg-5 p-0">
@@ -142,9 +143,10 @@
       </div>
     </div>
 
-    <div class="row flex-row-reverse justify-content-center mt-3">
+    <div class="row flex-row-reverse justify-content-center mt-4">
       <div class="col-lg-3 p-0">
         <div class="about__article__bg" style="background-image: url(img/photo02.png);"></div>
+        <div class="overtag">熱門<br>文章<br><span class="append">Hot!</span></div>
         <div class="overlay">全球股民狂歡　百兆市值的夢幻時代， 破兩個世界紀錄</div>
       </div>
       <div class="col-lg-5 p-0">
@@ -286,7 +288,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" id="post-1-tab" data-toggle="pill" href="#post-1" role="tab" aria-controls="post-1" aria-selected="true">
                         <!-- Single Blog Post -->
-                        <div class="single-blog-post style-2 d-flex align-items-center">
+                        <div class="d-flex align-items-center">
                             <div class="post-thumbnail">
                                 <img src="img/bg-img/s50.png" alt="">
                             </div>
@@ -357,6 +359,76 @@
   </div>
 
     
+  <div class="section-news mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-heading">
+                <h4>New!新聞</h4>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters justify-content-center">
+        <div class="col-10 d-inline-flex">
+          <div class="col-4 flex-column">
+            <div class="card">
+              <img src="img/photo08.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 flex-row">
+            <div class="card-group">
+              <div class="col-6">
+                <div class="card">
+                  <img src="img/photo09.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text .</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/photo10.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text .</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="img/photo11.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting.</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="img/photo12.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with suppo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+
+
+
+  </div>
+
+
 
 
   <div class="section-hot-video mt-5">
@@ -371,47 +443,41 @@
 
     <div class="row no-gutters justify-content-center">
       <div class="col-10">
-        <div id="carousel-example" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                    <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img1">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img2">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/hot-video-3.png" class="img-fluid mx-auto d-block" alt="img3">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img4">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img5">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/hot-video-3.png" class="img-fluid mx-auto d-block" alt="img6">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img7">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img8">
-                </div>
+        <div id="carousel-hot-video" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner row w-100 mx-auto" role="listbox">
+            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img1">
             </div>
-            <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img2">
+            </div>
+            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="img/hot-video-3.png" class="img-fluid mx-auto d-block" alt="img3">
+            </div>
+            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img4">
+            </div>
+            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img5">
+            </div>
+            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="img/hot-video-3.png" class="img-fluid mx-auto d-block" alt="img6">
+            </div>
           </div>
+          <a class="carousel-control-prev" href="#carousel-hot-video" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-hot-video" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
-
   </div>
+
+</div>
 
 
 
@@ -462,7 +528,7 @@
     /*
         Carousel
     */
-    $('#carousel-example').on('slide.bs.carousel', function (e) {
+    $('#carousel-hot-video').on('slide.bs.carousel', function (e) {
         /*
             CC 2.0 License Iatek LLC 2018 - Attribution required
         */

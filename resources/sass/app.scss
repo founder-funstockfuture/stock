@@ -155,6 +155,14 @@ html {
       background-color: #34322E;
 
     }
+    .main-slide{
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        background-size: 50%, 50%;
+      }
+    }
 
     .section-heading {
       position: relative;
@@ -196,14 +204,6 @@ html {
 
     .notice-bar{
       margin: 5px 0;
-    }
-    .slide{
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        height: 100px;
-        width: 100px;
-        background-size: 50%, 50%;
-      }
     }
 
     
@@ -306,8 +306,8 @@ html {
         position: absolute; 
         bottom: 0; 
         background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.5); /* Black see-through */
-        color: #f1f1f1; 
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
         width: 100%;
         transition: .5s ease;
         opacity:0.8;
@@ -317,7 +317,29 @@ html {
         text-align: center;
       }
 
-      
+      .overtag {
+        font-family: Open Sans;
+        line-height: 1.3rem;
+        font-weight: 600;
+        position: absolute;
+        top: -15PX;
+        left: 0;
+        background: #F47209;
+        color: #f1f1f1;
+        width: 20%;
+        height: 20%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+        .append{
+          font-family: none;
+          font-size: 14px;
+          font-weight: 100;
+        }
+      }
 
 
 
@@ -390,8 +412,6 @@ html {
 
 
     .section-new-video {
-      padding-bottom: 80px;
-
       .container{
         max-width: 80%;
       }
@@ -434,7 +454,7 @@ html {
               padding-left: 20px;
               //border-left: 3px solid transparent;
               color:#444;
-
+              margin-bottom:0.8rem;
           }
       }
 
@@ -443,7 +463,7 @@ html {
         z-index: 1;
         width: 100%;
         height: 400px;
-        
+
         @media #{$breakpoint-lg} {
             height: 400px;
         }
@@ -516,9 +536,9 @@ html {
       }
 
         .post-content {
-          padding:10px 15px;
+          padding: 0px 15px;
           .post-title {
-              font-size: 18px;
+              font-size: 16px;
               display: block;
               margin-bottom: 10px;
 
@@ -535,7 +555,7 @@ html {
           .post-meta {
               position: relative;
               z-index: 1;
-              font-size: 18px;
+              font-size: 14px;
               a {
                   display: inline-block;
                   margin-right: 30px;
@@ -688,7 +708,23 @@ html {
     }
 
 
+    .section-news{
+      .card{
+        height:100%;
+        overflow: hidden;
+      }
 
+      .card-group{
+        .card{
+          height:50%;
+          overflow: hidden;
+        }
+
+
+      }
+
+
+    }
 
 
 
