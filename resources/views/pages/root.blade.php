@@ -47,59 +47,60 @@
 </div>
 
 
-  <div class="container my-4 vertical-tabs">
+  <div class="vertical-tabs my-4 d-none d-lg-block">
       <div class="row justify-content-center">
-        <div class="col-1">
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="col-lg-1">
+          <div class="nav float-right flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="tab" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">台股</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="tab" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">亞洲</a>
             <a class="nav-link" id="v-pills-messages-tab" data-toggle="tab" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">美洲</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="tab" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">歐洲</a>
           </div>
         </div>
-        <div class="col-10">
+
+        <div class="col-lg-9">
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖3</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖3</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖4</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖4</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖5</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖5</text></svg>
               </div>
             </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
               </div>
 
             </div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
               </div>
 
             </div>
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="200" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
               </div>
             </div>
           </div>
@@ -108,207 +109,311 @@
   </div>
 
 
-
-
-  <section class="good-articles">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading -->
-                    <div class="section-heading">
-                        <h4>Share! 好文推薦</h4>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-              <div class="col-lg-4 p-0">
-                <div class="about__article__bg" style="background-image: url(img/photo01.png);"></div>
-                <div class="overlay">【台積600】市值超越股神巴菲特公司躍居 全球第10大</div>
-              </div>
-              <div class="col-lg-5 p-0">
-                <div class="about__article__text pl-4">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <a href="#"><img src="img/news-icon.png" alt="">行情終將在狂熱中毀滅，但2021會越來越好</a></li>
-                    <li class="list-group-item"><img src="img/news-icon.png" alt="">
-                    <a href="#">營收創新高！為何還跌停賣不掉 ?大盤現已..「四面楚歌」?(台股盤後......</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">Apple Car概念股飆、鴻海站回100元...台股老手：投資不能憑情緒......</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">[台積600]市值超越股神巴菲特公司 躍居全球第10大</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">這次不一樣？比特幣飆漲又暴跌，破解5大迷思</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">2021怎麼投資？《富比世》雜誌10大趨勢</a></li>
-                    <li><button type="button" class="btn btn-secondary btn-block">More</button></li>
-                  </ul>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-center mt-3">
-              <div class="col-lg-5 p-0">
-                <div class="about__article__text pr-4">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <a href="#"><img src="img/news-icon.png" alt="">行情終將在狂熱中毀滅，但2021會越來越好</a></li>
-                    <li class="list-group-item"><img src="img/news-icon.png" alt="">
-                    <a href="#">營收創新高！為何還跌停賣不掉 ?大盤現已..「四面楚歌」?(台股盤後......</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">Apple Car概念股飆、鴻海站回100元...台股老手：投資不能憑情緒......</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">[台積600]市值超越股神巴菲特公司 躍居全球第10大</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">這次不一樣？比特幣飆漲又暴跌，破解5大迷思</a></li>
-                    <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">2021怎麼投資？《富比世》雜誌10大趨勢</a></li>
-                    <li><button type="button" class="btn btn-secondary btn-block">More</button></li>
-                  </ul>
-
-                </div>
-              </div>
-              <div class="col-lg-4 p-0">
-                <div class="about__article__bg" style="background-image: url(img/photo01.png);"></div>
-                <div class="overlay">全球股民狂歡　百兆市值的夢幻時代， 破兩個世界紀錄</div>
-              </div>
-
-            </div>
-
-
-
-
-        </div>
-    </section>
-
-
-
-
-
-    <!-- ##### Video Area Start ##### -->
-    <section class="section-padding-80">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-12 col-md-7 col-lg-8">
-                    <div class="tab-content">
-                    <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/50.png);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/8.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="post-3" role="tabpanel" aria-labelledby="post-3-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/9.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="post-4" role="tabpanel" aria-labelledby="post-4-tab">
-                            <!-- Single Feature Post -->
-                            <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg);">
-                                <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-5 col-lg-4">
-                    <ul class="nav vizew-nav-tab" role="tablist">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" id="post-1-tab" data-toggle="pill" href="#post-1" role="tab" aria-controls="post-1" aria-selected="true">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/s50.png" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span>2020/01/15</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-2-tab" data-toggle="pill" href="#post-2" role="tab" aria-controls="post-2" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/s51.png" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span>2020/01/14</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-3-tab" data-toggle="pill" href="#post-3" role="tab" aria-controls="post-3" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/s52.png" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span>2020/01/13</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" id="post-4-tab" data-toggle="pill" href="#post-4" role="tab" aria-controls="post-4" aria-selected="false">
-                                <!-- Single Blog Post -->
-                                <div class="single-blog-post style-2 d-flex align-items-center">
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/s53.png" alt="">
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
-                                        <div class="post-meta d-flex justify-content-between">
-                                            <span>2020/01/12</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
+  <div class="good-articles">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-heading">
+                <h4>Share! 好文推薦</h4>
+                <div class="line"></div>
             </div>
         </div>
-    </section>
-    <!-- ##### Video Area End ##### -->
+    </div>
+
+    <div class="row justify-content-center first-article">
+      <div class="col-lg-3 p-0">
+        <div class="about__article__bg" style="background-image: url(img/photo01.png);"></div>
+        <div class="overlay">【台積600】市值超越股神巴菲特公司躍居 全球第10大</div>
+      </div>
+      <div class="col-lg-5 p-0">
+        <div class="about__article__text">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#"><img src="img/news-icon.png" alt="">行情終將在狂熱中毀滅，但2021會越來越好</a></li>
+            <li class="list-group-item"><img src="img/news-icon.png" alt="">
+            <a href="#">營收創新高！為何還跌停賣不掉 ?大盤現已..「四面楚歌」?(台股盤後......</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">Apple Car概念股飆、鴻海站回100元...台股老手：投資不能憑情緒......</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">[台積600]市值超越股神巴菲特公司 躍居全球第10大</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">這次不一樣？比特幣飆漲又暴跌，破解5大迷思</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">2021怎麼投資？《富比世》雜誌10大趨勢</a></li>
+            <li><a class="btn btn-secondary btn-block">More</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row flex-row-reverse justify-content-center mt-3">
+      <div class="col-lg-3 p-0">
+        <div class="about__article__bg" style="background-image: url(img/photo02.png);"></div>
+        <div class="overlay">全球股民狂歡　百兆市值的夢幻時代， 破兩個世界紀錄</div>
+      </div>
+      <div class="col-lg-5 p-0">
+        <div class="about__article__text pr-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#"><img src="img/news-icon.png" alt="">行情終將在狂熱中毀滅，但2021會越來越好</a></li>
+            <li class="list-group-item"><img src="img/news-icon.png" alt="">
+            <a href="#">營收創新高！為何還跌停賣不掉 ?大盤現已..「四面楚歌」?(台股盤後......</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">Apple Car概念股飆、鴻海站回100元...台股老手：投資不能憑情緒......</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">[台積600]市值超越股神巴菲特公司 躍居全球第10大</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">這次不一樣？比特幣飆漲又暴跌，破解5大迷思</a></li>
+            <li class="list-group-item"><a href="#"><img src="img/news-icon.png" alt="">2021怎麼投資？《富比世》雜誌10大趨勢</a></li>
+            <li><a class="btn btn-secondary btn-block">More</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="fisherman">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="section-heading">
+                  <h4>Top 5! 漁夫好文</h4>
+                  <div class="line"></div>
+              </div>
+          </div>
+      </div>
+
+        <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="about__article__text">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="number-sign">1</span>
+                  <a href="#">2021怎麼投資？《富比世》雜誌10大趨勢</a>
+                </li>
+                <li class="list-group-item">
+                  <span class="number-sign">2</span>
+                  <a href="#">營收創新高！為何還跌停賣不掉 ?大盤現已..「四面楚歌」?(台股盤後......</a>
+                </li>
+                <li class="list-group-item">
+                  <span class="number-sign">3</span>
+                  <a href="#">《半導體》台積電今年資本支出估躍增逾45％ 營收再拚新高</a>
+                </li>
+                <li class="list-group-item">
+                  <span class="number-sign">4</span>
+                  <a href="#">創4月漲幅新高》美元開始反彈，投資人的樂觀情緒會降溫嗎？</a>
+                </li>
+                <li class="list-group-item">
+                  <span class="number-sign">5</span>
+                  <a href="#">台達電、國巨目標價 大摩上修至350元、680元</a>
+                </li>
+
+                <li class="mt-5"><a class="btn btn-secondary btn-block">More</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section-new-video mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-heading">
+                <h4>New! Video 最新影視</h4>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+      <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
+                <!-- Single Feature Post -->
+                <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/50.png);">
+                    <!-- Play Button -->
+                    <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                    <!-- Video Duration -->
+                    <span class="video-duration">05.03</span>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
+                  <!-- Single Feature Post -->
+                  <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/8.jpg);">
+                      <!-- Play Button -->
+                      <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+
+                      <!-- Video Duration -->
+                      <span class="video-duration">05.03</span>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="post-3" role="tabpanel" aria-labelledby="post-3-tab">
+                  <!-- Single Feature Post -->
+                  <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/9.jpg);">
+                      <!-- Play Button -->
+                      <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+
+                      <!-- Video Duration -->
+                      <span class="video-duration">05.03</span>
+                  </div>
+              </div>
+
+              <div class="tab-pane fade" id="post-4" role="tabpanel" aria-labelledby="post-4-tab">
+                  <!-- Single Feature Post -->
+                  <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg);">
+                      <!-- Play Button -->
+                      <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+
+                      <!-- Video Duration -->
+                      <span class="video-duration">05.03</span>
+                  </div>
+              </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-3">
+            <ul class="nav vizew-nav-tab" role="tablist">
+
+                <li class="nav-item">
+                    <a class="nav-link active" id="post-1-tab" data-toggle="pill" href="#post-1" role="tab" aria-controls="post-1" aria-selected="true">
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post style-2 d-flex align-items-center">
+                            <div class="post-thumbnail">
+                                <img src="img/bg-img/s50.png" alt="">
+                            </div>
+                            <div class="post-content">
+                                <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
+                                <div class="post-meta d-flex justify-content-between">
+                                    <span>2020/01/15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="post-2-tab" data-toggle="pill" href="#post-2" role="tab" aria-controls="post-2" aria-selected="false">
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post style-2 d-flex align-items-center">
+                            <div class="post-thumbnail">
+                                <img src="img/bg-img/s51.png" alt="">
+                            </div>
+                            <div class="post-content">
+                                <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
+                                <div class="post-meta d-flex justify-content-between">
+                                    <span>2020/01/14</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="post-3-tab" data-toggle="pill" href="#post-3" role="tab" aria-controls="post-3" aria-selected="false">
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post style-2 d-flex align-items-center">
+                            <div class="post-thumbnail">
+                                <img src="img/bg-img/s52.png" alt="">
+                            </div>
+                            <div class="post-content">
+                                <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
+                                <div class="post-meta d-flex justify-content-between">
+                                    <span>2020/01/13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="post-4-tab" data-toggle="pill" href="#post-4" role="tab" aria-controls="post-4" aria-selected="false">
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post style-2 d-flex align-items-center">
+                            <div class="post-thumbnail">
+                                <img src="img/bg-img/s53.png" alt="">
+                            </div>
+                            <div class="post-content">
+                                <h6 class="post-title">【股期龍哥】蘇建豐 分析師｜龍哥非凡 連線~不看可惜~ </h6>
+                                <div class="post-meta d-flex justify-content-between">
+                                    <span>2020/01/12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+  </div>
+
+    
+
+
+  <div class="section-hot-video mt-5">
+    <div class="row">
+      <div class="col-12">
+          <div class="section-heading">
+              <h4>熱門影視</h4>
+              <div class="line"></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row no-gutters justify-content-center">
+      <div class="col-10">
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                    <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img1">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img2">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="img/hot-video-3.png" class="img-fluid mx-auto d-block" alt="img3">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img4">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img5">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="img/hot-video-3.png" class="img-fluid mx-auto d-block" alt="img6">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="img/hot-video-1.png" class="img-fluid mx-auto d-block" alt="img7">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="img/hot-video-2.png" class="img-fluid mx-auto d-block" alt="img8">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
 
 
 
@@ -318,7 +423,22 @@
 <div style="height:400px;"></div>
 
 
+
+
+
+
+
+
+
+
+
 @stop
+
+
+
+
+
+
 
 @section('styles')
 
@@ -335,11 +455,35 @@
         $(this).css('background-image', 'url(' + bg + ')');
     });
 
-    $('.carousel').carousel({
+    $('.slide').carousel({
       interval: 2000
     })
 
-
+    /*
+        Carousel
+    */
+    $('#carousel-example').on('slide.bs.carousel', function (e) {
+        /*
+            CC 2.0 License Iatek LLC 2018 - Attribution required
+        */
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 5;
+        var totalItems = $('.section-hot-video .carousel-item').length;
+    
+        if (idx >= totalItems-(itemsPerSlide-1)) {
+            var it = itemsPerSlide - (totalItems - idx);
+            for (var i=0; i<it; i++) {
+                // append slides to end
+                if (e.direction=="left") {
+                    $('.section-hot-video .carousel-item').eq(i).appendTo('.section-hot-video .carousel-inner');
+                }
+                else {
+                    $('.section-hot-video .carousel-item').eq(0).appendTo('.section-hot-video .carousel-inner');
+                }
+            }
+        }
+    });
 
     
   </script>

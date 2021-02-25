@@ -1,66 +1,62 @@
 <header class="header-section">
-        <div class="container">
-            <div class="inner-header">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="logo">
+        <div class="inner-header">
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-9 d-inline-flex flex-row-reverse align-self-end">
+                    <ul class="nav-right">
+                        <li class="fb-icon">
                             <a href="./index.html">
-                                <img src="img/logo.png" alt="">
+                                <img src="img/fb-icon.png" alt="">
                             </a>
+                        </li>
+                        <li class="line-icon">
+                            <a href="./index.html">
+                                <img src="img/line-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li class="youtube-icon">
+                            <a href="./index.html">
+                                <img src="img/youtube-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li class="cart-icon">
+                            <a href="./index.html">
+                                <img src="img/cart.png" alt="">
+                            </a>
+                        </li>
+                        <li class="notice-icon">
+                            <a href="./index.html">
+                                <img src="img/notice-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li class="login">
+                            <button type="button" class="btn btn-outline-warning">登入</button></li>
+                        <li class="register">
+                            <button type="button" class="btn btn-outline-warning">註冊</button></li>
+                    </ul>
+                    
+                    <div class="search-bar">
+                        <div class="input-group">
+                            <input class="form-control py-2" type="search" id="search-input">
+                            <span class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 d-inline-flex flex-row-reverse align-self-end">
-
-                        <ul class="nav-right">
-                            <li class="fb-icon">
-                              <a href="./index.html">
-                                  <img src="img/fb-icon.png" alt="">
-                              </a>
-                            </li>
-                            <li class="line-icon">
-                              <a href="./index.html">
-                                  <img src="img/line-icon.png" alt="">
-                              </a>
-                            </li>
-                            <li class="youtube-icon">
-                              <a href="./index.html">
-                                  <img src="img/youtube-icon.png" alt="">
-                              </a>
-                            </li>
-                            <li class="cart-icon">
-                              <a href="./index.html">
-                                  <img src="img/cart.png" alt="">
-                              </a>
-                            </li>
-                            <li class="notice-icon">
-                              <a href="./index.html">
-                                  <img src="img/notice-icon.png" alt="">
-                              </a>
-                            </li>
-                            <li class="login">
-                              <button type="button" class="btn btn-outline-warning">登入</button></li>
-                            <li class="register">
-                              <button type="button" class="btn btn-outline-warning">註冊</button></li>
-                        </ul>
-                        
-                        <div class="search-bar">
-                            <div class="input-group">
-                                <input class="form-control py-2" type="search" id="search-input">
-                                <span class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <div class="nav-item">
-            <div class="container">
-                <nav class="nav-menu navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+
+        <div class="nav-item justify-content-center">
+                <nav class="nav-menu navbar navbar-expand-lg navbar-light bg-light">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">航海日誌</a>
@@ -114,7 +110,6 @@
                     </ul>
                 </nav>
                 <div id="mobile-menu-wrap"></div>
-            </div>
         </div>
 
     </header>
