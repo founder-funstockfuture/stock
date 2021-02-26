@@ -17048,9 +17048,8 @@ readers do not read off random characters that represent icons */
 }
 
 .root-page .row {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: 0;
+  margin-right: 0;
 }
 
 .root-page ul li {
