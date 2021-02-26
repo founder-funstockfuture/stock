@@ -149,4 +149,25 @@ class VerificationCodesController extends Controller
     }
 
 
+    
+    // cmoney 取值
+    public function test(Request $request){
+        $client = new Client;
+        $url='http://35.229.212.74/CMoneyAdox/AdoxcService.svc/QueryTable';
+        $sql="SELECT top 2 * FROM 日收盤表排行 WHERE 日期='20210225'";
+        $table_name=["日收盤表排行"];
+
+        $response = $client->request('POST', $url, ['json' => [
+            'FormatSQL' => $sql,
+            'TableNames' => $table_name,
+        ]]);
+        
+        $result = json_decode($response->getBody(), true);
+
+
+        return $result['Error'].'~~'.$result['ResultValue'];
+    }
+
+
+
 }
