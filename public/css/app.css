@@ -17047,111 +17047,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/* universal */
-
-body {
-  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
-  font-size: 14px;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-html .header-section .inner-header .search-bar {
-  padding: 10px 0;
-  width: 45%;
-}
-
-html .header-section .inner-header .btn-outline-warning {
-  color: #f6993f;
-  border-color: #f6993f;
-}
-
-html .header-section .inner-header .logo {
-  padding: 12px 0;
-}
-
-html .header-section .inner-header .logo a {
-  display: inline-block;
-}
-
-html .header-section .inner-header .nav-right {
-  padding: 10px 0;
-}
-
-html .header-section .inner-header .nav-right li {
-  list-style: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 15px;
-}
-
-html .header-section .nav-item {
-  display: flex;
-}
-
-html .header-section .nav-item .mobile-menu {
-  display: none;
-}
-
-html .header-section .nav-item .nav-menu li {
-  list-style: none;
-  display: inline-block;
-  margin-left: -5px;
-  position: relative;
-}
-
-html .header-section .nav-item .nav-menu li.active a {
-  background: #f6993f;
-}
-
-html .header-section .nav-item .nav-menu li a {
-  font-family: Segoe UI;
-  font-size: 1.75em;
-  font-weight: 600;
-  display: block;
-  color: #1f0303;
-  border-right: 3px solid #f6993f;
-  text-transform: uppercase;
-  padding: 0px 42px;
-  transition: all 0.3s;
-}
-
-html .header-section .nav-item .nav-menu li:first-child a {
-  border-left: 3px solid #f6993f;
-}
-
-html .header-section .nav-item .nav-menu li:hover > a {
-  background: #f6993f;
-}
-
-html .header-section .nav-item .slicknav_menu {
-  display: block;
-  background: transparent;
-  text-align: center;
-  margin-top: -48px;
-}
-
-html .header-section .nav-item .slicknav_nav {
-  background: #f7f0f0;
-}
-
-html .header-section .nav-item .slicknav_nav ul {
-  margin: 0;
-  text-align: left;
-}
-
-html .header-section .nav-item .slicknav_nav a,
-html .header-section .nav-item .slicknav_nav .slicknav_row {
-  margin: 0;
-}
-
-html .header-section .nav-item .slicknav_nav .dropdown a {
-  padding-left: 25px;
-}
-
 .root-page .row {
   display: flex;
   flex-wrap: wrap;
@@ -17736,14 +17631,190 @@ html .header-section .nav-item .slicknav_nav .dropdown a {
   }
 }
 
-.root-page .section-news .card {
-  height: 100%;
-  overflow: hidden;
-}
-
 .root-page .section-news .card-group .card {
   height: 50%;
   overflow: hidden;
+}
+
+.root-page .section-news .card-group .card .overtag {
+  font-family: Open Sans;
+  line-height: 1.3rem;
+  font-weight: 600;
+  position: absolute;
+  top: 0PX;
+  left: 0;
+  background: #F47209;
+  color: #f1f1f1;
+  width: 20%;
+  height: 21%;
+  transition: 0.5s ease;
+  opacity: 1;
+  color: white;
+  font-size: 1.9rem;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.root-page .section-news .card-group .card .overtag .append {
+  font-family: none;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.root-page .section-news .card-group .card .card-body h5.card-title {
+  color: #F47209;
+}
+
+.root-page .section-news .card-group .card .card-body h4.card-title {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.root-page .section-news .card {
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+}
+
+.root-page .section-news .card .overtag {
+  font-family: Open Sans;
+  line-height: 1.3rem;
+  font-weight: 600;
+  position: absolute;
+  top: 0PX;
+  left: 0;
+  background: #F47209;
+  color: #f1f1f1;
+  width: 15%;
+  height: 12%;
+  transition: 0.5s ease;
+  opacity: 1;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.root-page .section-news .card .overtag .append {
+  font-family: none;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.root-page .section-news .card .card-body h5.card-title {
+  color: #F47209;
+}
+
+.root-page .section-news .card .card-body .card-text {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+/* universal */
+
+body {
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html .header-section .inner-header .search-bar {
+  padding: 10px 0;
+  width: 45%;
+}
+
+html .header-section .inner-header .btn-outline-warning {
+  color: #f6993f;
+  border-color: #f6993f;
+}
+
+html .header-section .inner-header .logo {
+  padding: 12px 0;
+}
+
+html .header-section .inner-header .logo a {
+  display: inline-block;
+}
+
+html .header-section .inner-header .nav-right {
+  padding: 10px 0;
+}
+
+html .header-section .inner-header .nav-right li {
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+html .header-section .nav-item {
+  display: flex;
+}
+
+html .header-section .nav-item .mobile-menu {
+  display: none;
+}
+
+html .header-section .nav-item .nav-menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: -5px;
+  position: relative;
+}
+
+html .header-section .nav-item .nav-menu li.active a {
+  background: #f6993f;
+}
+
+html .header-section .nav-item .nav-menu li a {
+  font-family: Segoe UI;
+  font-size: 1.75em;
+  font-weight: 600;
+  display: block;
+  color: #1f0303;
+  border-right: 3px solid #f6993f;
+  text-transform: uppercase;
+  padding: 0px 42px;
+  transition: all 0.3s;
+}
+
+html .header-section .nav-item .nav-menu li:first-child a {
+  border-left: 3px solid #f6993f;
+}
+
+html .header-section .nav-item .nav-menu li:hover > a {
+  background: #f6993f;
+}
+
+html .header-section .nav-item .slicknav_menu {
+  display: block;
+  background: transparent;
+  text-align: center;
+  margin-top: -48px;
+}
+
+html .header-section .nav-item .slicknav_nav {
+  background: #f7f0f0;
+}
+
+html .header-section .nav-item .slicknav_nav ul {
+  margin: 0;
+  text-align: left;
+}
+
+html .header-section .nav-item .slicknav_nav a,
+html .header-section .nav-item .slicknav_nav .slicknav_row {
+  margin: 0;
+}
+
+html .header-section .nav-item .slicknav_nav .dropdown a {
+  padding-left: 25px;
 }
 
 .footer {

@@ -56,7 +56,7 @@
         </div>
 
         <div class="nav-item justify-content-center">
-                <nav class="nav-menu navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="nav-menu navbar navbar-expand-lg navbar-light">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">航海日誌</a>

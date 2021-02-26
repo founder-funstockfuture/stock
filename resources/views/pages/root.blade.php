@@ -62,36 +62,36 @@
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖3</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖3</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖4</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖4</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖5</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖5</text></svg>
               </div>
             </div>
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
               </div>
 
             </div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖1</text></svg>
               </div>
               <div class="ichart">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="205" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block" width="210" height="138" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"></rect><text fill="#555" dy=".3em" x="50%" y="50%">圖2</text></svg>
               </div>
 
             </div>
@@ -170,21 +170,20 @@
   </div>
 
 
-
   <div class="fisherman">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-      <div class="row">
-          <div class="col-12">
+        <div class="row">
+            <div class="col-12">
               <div class="section-heading">
-                  <h4>Top 5! 漁夫好文</h4>
-                  <div class="line"></div>
+                <h4>Top 5! 漁夫好文</h4>
+                <div class="line"></div>
               </div>
-          </div>
-      </div>
+            </div>
+        </div>
 
         <div class="row justify-content-center">
-        <div class="col-10">
+          <div class="col-10">
             <div class="about__article__text">
               <ul class="list-group">
                 <li class="list-group-item">
@@ -207,15 +206,11 @@
                   <span class="number-sign">5</span>
                   <a href="#">台達電、國巨目標價 大摩上修至350元、680元</a>
                 </li>
-
                 <li class="mt-5"><a class="btn btn-secondary btn-block">More</a></li>
               </ul>
-
             </div>
           </div>
         </div>
-
-
 
       </div>
     </div>
@@ -233,7 +228,7 @@
     </div>
 
       <div class="row no-gutters justify-content-center">
-          <div class="col-12 col-md-6 col-lg-5">
+          <div class="col-12 col-md-6 col-lg-6">
             <div class="tab-content">
               <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
                 <!-- Single Feature Post -->
@@ -282,7 +277,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-5 col-lg-3">
+        <div class="col-12 col-md-5 col-lg-4">
             <ul class="nav vizew-nav-tab" role="tablist">
 
                 <li class="nav-item">
@@ -370,60 +365,68 @@
     </div>
 
     <div class="row no-gutters justify-content-center">
-        <div class="col-10 d-inline-flex">
-          <div class="col-4 flex-column">
-            <div class="card">
-              <img src="img/photo08.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+      <div class="col-12 col-md-10" style="display:contents;">
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <img src="img/photo08.png" class="card-img-top" alt="...">
+            <div class="overtag">25<br><span class="append">JAN</span></div>
+            <div class="card-body">
+              <h5 class="card-title">財經</h5>
+              <h4 class="card-title">5G、電動車和英特爾釋單消息創需求：台 積電再擴大投資，ADR漲近6%登歷史新高</h4>
+              <p class="card-text">疫情爆發以來，居家辦公風潮帶動個人電腦與資 料中心伺服器需求，台積電獲益良多。美國政府 制裁台積電昔日大客戶華為技術有限公司後，台 積電也安度考驗。</p>
             </div>
           </div>
-
-          <div class="col-6 flex-row">
-            <div class="card-group">
-              <div class="col-6">
-                <div class="card">
-                  <img src="img/photo09.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text .</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/photo10.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text .</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card">
-                  <img src="img/photo11.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting.</p>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <img src="img/photo12.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with suppo.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card-group">
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <img src="img/photo09.png" class="card-img-top" alt="...">
+                <div class="overtag">14<br><span class="append">JAN</span></div>
+                <div class="card-body">
+                  <h5 class="card-title">金融</h5>
+                  <h4 class="card-title">外資匯出股利 新台幣區間整理 貶2.2分</h4>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/photo10.png" class="card-img-top" alt="...">
+                <div class="overtag">14<br><span class="append">JAN</span></div>
+                <div class="card-body">
+                  <h5 class="card-title">國際</h5>
+                  <h4 class="card-title">電動車算什麼？通用在CES秀「 凱迪拉克飛天車」，股價...</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <img src="img/photo11.png" class="card-img-top" alt="...">
+                <div class="overtag">15<br><span class="append">JAN</span></div>
+                <div class="card-body">
+                  <h5 class="card-title">國際</h5>
+                  <h4 class="card-title">美股三大指數小跌 投資人觀望 拜登即將公布的刺激計畫</h4>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="img/photo12.png" class="card-img-top" alt="...">
+                <div class="overtag">15<br><span class="append">JAN</span></div>
+                <div class="card-body">
+                  <h5 class="card-title">投資理財</h5>
+                  <h4 class="card-title">台積電衝破600員還能不能買？ 三個數據告訴你</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-10">
+          <a class="btn btn-secondary btn-block">More</a>
+        </div>
+
+      </div>
+
     </div>
-
-
 
 
   </div>
