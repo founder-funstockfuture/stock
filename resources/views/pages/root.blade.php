@@ -2,7 +2,7 @@
 @section('title', '首頁')
 
 @section('content')
-  <div class="container">
+  <div class="container d-none d-md-block">
     <div class="row">
       <div class="col-12">
         <div class="notice-bar">
@@ -14,8 +14,6 @@
       </div>
     </div>
   </div>
-
-
 
   <div id="carouselControls" class="carousel main-slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -232,7 +230,7 @@
             <div class="tab-content">
               <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
                 <!-- Single Feature Post -->
-                <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/50.png);">
+                <div class="single-feature-post video-post" style="background-image: url(img/bg-img/50.png);">
                     <!-- Play Button -->
                     <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
                     <!-- Video Duration -->
@@ -242,7 +240,7 @@
 
               <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
                   <!-- Single Feature Post -->
-                  <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/8.jpg);">
+                  <div class="single-feature-post video-post" style="background-image: url(img/bg-img/8.jpg);">
                       <!-- Play Button -->
                       <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
@@ -252,7 +250,7 @@
               </div>
               <div class="tab-pane fade" id="post-3" role="tabpanel" aria-labelledby="post-3-tab">
                   <!-- Single Feature Post -->
-                  <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/9.jpg);">
+                  <div class="single-feature-post video-post" style="background-image: url(img/bg-img/9.jpg);">
                       <!-- Play Button -->
                       <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
@@ -263,7 +261,7 @@
 
               <div class="tab-pane fade" id="post-4" role="tabpanel" aria-labelledby="post-4-tab">
                   <!-- Single Feature Post -->
-                  <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg);">
+                  <div class="single-feature-post video-post" style="background-image: url(img/bg-img/10.jpg);">
                       <!-- Play Button -->
                       <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 

@@ -1,14 +1,14 @@
 <header class="header-section">
         <div class="inner-header">
             <div class="row justify-content-center">
-                <div class="col-md-2">
+                <div class="col-1 col-md-2">
                     <div class="logo">
                         <a href="./index.html">
                             <img src="img/logo.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-9 d-inline-flex flex-row-reverse align-self-end">
+                <div class="col-10 col-md-9 d-inline-flex flex-row-reverse align-self-end">
                     <ul class="nav-right">
                         <li class="fb-icon">
                             <a href="./index.html">
@@ -51,78 +51,48 @@
                             </span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <div class="nav-item justify-content-center">
-                <nav class="nav-menu navbar navbar-expand-lg navbar-light">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">航海日誌</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">漁夫物語</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">專家影視廳</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">市場瞭望台</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">盤後金銀島</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">選股藏寶圖</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">FUN商城</a>
-                        </li>
+            <nav class="nav-menu navbar ">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">航海日誌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">漁夫物語</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">專家影視廳</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">市場瞭望台</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">盤後金銀島</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">選股藏寶圖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">FUN商城</a>
+                    </li>
 
-                    </ul>
-                </nav>
-            
-                <nav class="nav-menu mobile-menu navbar navbar-expand-lg navbar-light bg-light">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">航海日誌</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">漁夫物語</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">專家影視廳</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">市場瞭望台</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">盤後金銀島</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">選股藏寶圖</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">FUN商城</a>
-                        </li>
-
-                    </ul>
-                </nav>
-                <div id="mobile-menu-wrap"></div>
+                </ul>
+            </nav>
+            <div id="mobile-menu-wrap"></div>
         </div>
 
     </header>
-
 
 
 @section('scriptsAfterJs')
   <script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
 
   <script>
-    /*------------------
-		Navigation
-	--------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true

@@ -1,8 +1,7 @@
 {
     "/js/app.js": "/js/app.js?id=1332cbecf22085128f99",
-    "/css/app.css": "/css/app.css?id=ce357520efb6bbd5512c",
-    "/js/owl.carousel.min.js": "/js/owl.carousel.min.js?id=47c357c05cb99cedbac2",
     "/js/jquery.slicknav.js": "/js/jquery.slicknav.js?id=c96c2acef2d4473a58b1",
-    "/css/owl.carousel.min.css": "/css/owl.carousel.min.css?id=b9755c9c2613c455154c",
-    "/css/themify-icons.css": "/css/themify-icons.css?id=3b10b21e855baa6fd9d2"
+    "/css/slicknav.min.css": "/css/slicknav.min.css?id=cb0567a8e6fa8a2786de",
+    "/css/themify-icons.css": "/css/themify-icons.css?id=3b10b21e855baa6fd9d2",
+    "/css/app.css": "/css/app.css?id=44234390b9d8eea83f24"
 }

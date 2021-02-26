@@ -12,8 +12,8 @@
   <title>@yield('title', 'Stock') - fun Stock</title>
   <meta name="description" content="@yield('description', '永誠 stock')" />
   <!-- Styles -->
-  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-
+  <link rel="stylesheet" href="{{ mix('css/app.css') }}" >
+  <link rel="stylesheet" href="{{ asset('css/slicknav.min.css') }}">
   @yield('styles')
 
 </head>

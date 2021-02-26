@@ -31,31 +31,24 @@ html {
 
     .inner-header{
       .search-bar{
-        padding: 10px 0;
+        padding: 15px 0 10px;
         width: 45%;
       }
       .btn-outline-warning {
         color:$fun-orange;
         border-color:$fun-orange;
       }
-      .logo {
-        padding: 12px 0;
-      }
 
-      .logo a {
-        display: inline-block;
-      }
-
-    
       .nav-right {
-        padding: 10px 0;
+        padding: 1rem 0;
+        
       }
       
       .nav-right li {
         list-style: none;
         display: inline-block;
-        font-size: 20px;
-        margin-left: 15px;
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
       }
       
 
@@ -64,53 +57,140 @@ html {
 
     }
     
-
     
     .nav-item {
+      background: #fff;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-    
-      .mobile-menu{
-        display: none;
-      }
-  
-      .nav-menu li {
-        list-style: none;
-        display: inline-block;
-        margin-left: -5px;
+      .nav-menu {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
         position: relative;
-        &.active a {
-          background: $fun-orange;
-        }
+        li {
+          list-style: none;
+          display: inline-block;
+          position: relative;
+          &.active a {
+            background: $fun-orange;
+          }
 
+          &:nth-child(1){
+            border-left: 3px solid $fun-orange;
+          }
+
+          a {
+            font-family: Segoe UI;
+            font-size: 1.5em;
+            font-weight: 600;
+            display: block;
+            color: #1f0303;
+            border-right: 3px solid $fun-orange;
+            text-transform: uppercase;
+            padding: 0px 42px;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+          }
+  
+          &:hover {
+            &>a {
+              background: $fun-orange;
+            }
+            .dropdown {
+              opacity: 1;
+              visibility: visible;
+              top: 52px;
+            }
+          }
+          .dropdown {
+            position: absolute;
+            right: 0;
+            top: 82px;
+            width: 200px;
+            z-index: 99;
+            background: orange;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            li {
+              display: block;
+              margin-left: 0;
+              &:hover {
+                &>a {
+                  background: transparent;
+                  color: #777;
+                }
+              }
+              a {
+                border-right: 0;
+                padding: 13px 20px 12px 30px;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
       }
-      
-      .nav-menu li{
-        a {
-          font-family: Segoe UI;
-          font-size: 1.75em;
-          font-weight: 600;
-          display: block;
-          color: #1f0303;
-          border-right: 3px solid $fun-orange;
-          text-transform: uppercase;
-          padding: 0px 42px;
-          -webkit-transition: all 0.3s;
-          -o-transition: all 0.3s;
-          transition: all 0.3s;
-        }
-
-        &:first-child a {
-          border-left: 3px solid $fun-orange;
-        }
-        &:hover>a {
-          background:$fun-orange;
-        }
 
 
+
+
+
+
+
+
+
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1920px) {
+      .nav-item .nav-menu li a {
+        padding: 3px 45px;
       }
-      
+    }
+    
+    @media only screen and (min-width: 1200px) {
+      .container {
+        max-width: 1170px;
+      }
+    }
+    
+    /* Medium Device: 1200px */
+    
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .nav-item .nav-menu li a {
+        padding: 3px 45px;
+      }
+
+    }
+    
+    @media only screen and (max-width: 991px) {
+
+    }
+    
+    /* Tablet Device: 768px */
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .nav-item .nav-depart .depart-btn {
+        padding: 14px 40px 14px 18px;
+      }
+      .nav-item .nav-menu li a {
+        padding: 16px 10px 15px;
+      }
+
+    }
+    
+    /* Large Device: 480px */
+    
+    @media only screen and (max-width: 767px) {
+      .nav-item {
+        background: transparent;
+        .nav-menu {
+          display: none;
+        }
+      }
       .slicknav_menu {
         display: block;
         background: transparent;
@@ -118,23 +198,86 @@ html {
         margin-top: -48px;
       }
       .slicknav_nav {
-        background: rgb(247, 240, 240);
+        background: #333;
         ul {
           margin: 0;
           text-align: left;
         }
-        a,.slicknav_row {
+        a,
+        .slicknav_row {
           margin: 0;
         }
-        .dropdown a {
-          padding-left: 25px;
+        .dropdown {
+          a {
+            padding-left: 25px;
+          }
         }
+      }
+      .nav-item .nav-depart {
+        display: none;
+      }
+      .slicknav_btn {
+        border-radius: 0;
+        background-color: #e7ab3c;
+        display: inline-block;
+        right: -16px;
+      }
+      .slicknav_nav .slicknav_row,
+      .slicknav_nav a {
+        padding: 8px 15px;
+      }
+      .slicknav_nav a:hover {
+        border-radius: 0;
+        background: #e7ab3c;
+        color: #fff;
+      }
+      .slicknav_nav .slicknav_row:hover {
+        border-radius: 0;
+        background: #e7ab3c;
+        color: #fff;
+      }
+      .search-bar{
+        display: none;
+      }
+      .nav-right{
+        li{
+          &.fb-icon{
+            display: none;
+          }
+          &.line-icon{
+            display: none;
+          }
+          &.youtube-icon{
+            display: none;
+          }
+          &.register{
+            display: none;
+          }
+          &.login{
+            margin-right:0rem;
+          }
+        }
+      }
+      .logo {
+
+        a>img{
+          max-width:180px;
+          padding:0.5rem 0;
+        }
+
 
       }
 
-      
+    }
+    
+    /* Small Device: 320px */
+    
+    @media only screen and (max-width: 479px) {
+
+
 
     }
+
 
 
 

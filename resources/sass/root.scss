@@ -170,7 +170,7 @@
         opacity:0.8;
         color: white;
         font-size: 20px;
-        padding: 5px;
+        padding: 8px;
         text-align: center;
       }
 
@@ -435,6 +435,7 @@
           code customized by Azmind.com
       */
       @media (min-width: 768px) and (max-width: 991px) {
+        
         /* Show 4th slide on md if col-md-4*/
         .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
             position: absolute;
@@ -560,6 +561,10 @@
             display: block;
             visibility: visible;
         }
+      }
+
+      @media (max-width: 576px) {
+        margin-bottom: 60px;
       }
 
     }

@@ -17212,7 +17212,7 @@ readers do not read off random characters that represent icons */
   opacity: 0.8;
   color: white;
   font-size: 20px;
-  padding: 5px;
+  padding: 8px;
   text-align: center;
 }
 
@@ -17631,6 +17631,12 @@ readers do not read off random characters that represent icons */
   }
 }
 
+@media (max-width: 576px) {
+  .root-page .section-hot-video {
+    margin-bottom: 60px;
+  }
+}
+
 .root-page .section-news .card-group .card {
   height: 50%;
   overflow: hidden;
@@ -17724,8 +17730,15 @@ html {
   min-height: 100%;
 }
 
+html .header-section {
+  /* Medium Device: 1200px */
+  /* Tablet Device: 768px */
+  /* Large Device: 480px */
+  /* Small Device: 320px */
+}
+
 html .header-section .inner-header .search-bar {
-  padding: 10px 0;
+  padding: 15px 0 10px;
   width: 45%;
 }
 
@@ -17734,37 +17747,30 @@ html .header-section .inner-header .btn-outline-warning {
   border-color: #f6993f;
 }
 
-html .header-section .inner-header .logo {
-  padding: 12px 0;
-}
-
-html .header-section .inner-header .logo a {
-  display: inline-block;
-}
-
 html .header-section .inner-header .nav-right {
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 html .header-section .inner-header .nav-right li {
   list-style: none;
   display: inline-block;
-  font-size: 20px;
-  margin-left: 15px;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
 }
 
 html .header-section .nav-item {
+  background: #fff;
   display: flex;
 }
 
-html .header-section .nav-item .mobile-menu {
-  display: none;
+html .header-section .nav-item .nav-menu {
+  display: inline-flex;
+  position: relative;
 }
 
 html .header-section .nav-item .nav-menu li {
   list-style: none;
   display: inline-block;
-  margin-left: -5px;
   position: relative;
 }
 
@@ -17772,9 +17778,13 @@ html .header-section .nav-item .nav-menu li.active a {
   background: #f6993f;
 }
 
+html .header-section .nav-item .nav-menu li:nth-child(1) {
+  border-left: 3px solid #f6993f;
+}
+
 html .header-section .nav-item .nav-menu li a {
   font-family: Segoe UI;
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 600;
   display: block;
   color: #1f0303;
@@ -17784,37 +17794,162 @@ html .header-section .nav-item .nav-menu li a {
   transition: all 0.3s;
 }
 
-html .header-section .nav-item .nav-menu li:first-child a {
-  border-left: 3px solid #f6993f;
-}
-
 html .header-section .nav-item .nav-menu li:hover > a {
   background: #f6993f;
 }
 
-html .header-section .nav-item .slicknav_menu {
+html .header-section .nav-item .nav-menu li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 52px;
+}
+
+html .header-section .nav-item .nav-menu li .dropdown {
+  position: absolute;
+  right: 0;
+  top: 82px;
+  width: 200px;
+  z-index: 99;
+  background: orange;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+html .header-section .nav-item .nav-menu li .dropdown li {
   display: block;
+  margin-left: 0;
+}
+
+html .header-section .nav-item .nav-menu li .dropdown li:hover > a {
   background: transparent;
-  text-align: center;
-  margin-top: -48px;
+  color: #777;
 }
 
-html .header-section .nav-item .slicknav_nav {
-  background: #f7f0f0;
+html .header-section .nav-item .nav-menu li .dropdown li a {
+  border-right: 0;
+  padding: 13px 20px 12px 30px;
+  text-transform: capitalize;
 }
 
-html .header-section .nav-item .slicknav_nav ul {
-  margin: 0;
-  text-align: left;
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  html .header-section .nav-item .nav-menu li a {
+    padding: 3px 45px;
+  }
 }
 
-html .header-section .nav-item .slicknav_nav a,
-html .header-section .nav-item .slicknav_nav .slicknav_row {
-  margin: 0;
+@media only screen and (min-width: 1200px) {
+  html .header-section .container {
+    max-width: 1170px;
+  }
 }
 
-html .header-section .nav-item .slicknav_nav .dropdown a {
-  padding-left: 25px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  html .header-section .nav-item .nav-menu li a {
+    padding: 3px 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html .header-section .nav-item .nav-depart .depart-btn {
+    padding: 14px 40px 14px 18px;
+  }
+
+  html .header-section .nav-item .nav-menu li a {
+    padding: 16px 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html .header-section .nav-item {
+    background: transparent;
+  }
+
+  html .header-section .nav-item .nav-menu {
+    display: none;
+  }
+
+  html .header-section .slicknav_menu {
+    display: block;
+    background: transparent;
+    text-align: center;
+    margin-top: -48px;
+  }
+
+  html .header-section .slicknav_nav {
+    background: #333;
+  }
+
+  html .header-section .slicknav_nav ul {
+    margin: 0;
+    text-align: left;
+  }
+
+  html .header-section .slicknav_nav a,
+  html .header-section .slicknav_nav .slicknav_row {
+    margin: 0;
+  }
+
+  html .header-section .slicknav_nav .dropdown a {
+    padding-left: 25px;
+  }
+
+  html .header-section .nav-item .nav-depart {
+    display: none;
+  }
+
+  html .header-section .slicknav_btn {
+    border-radius: 0;
+    background-color: #e7ab3c;
+    display: inline-block;
+    right: -16px;
+  }
+
+  html .header-section .slicknav_nav .slicknav_row,
+  html .header-section .slicknav_nav a {
+    padding: 8px 15px;
+  }
+
+  html .header-section .slicknav_nav a:hover {
+    border-radius: 0;
+    background: #e7ab3c;
+    color: #fff;
+  }
+
+  html .header-section .slicknav_nav .slicknav_row:hover {
+    border-radius: 0;
+    background: #e7ab3c;
+    color: #fff;
+  }
+
+  html .header-section .search-bar {
+    display: none;
+  }
+
+  html .header-section .nav-right li.fb-icon {
+    display: none;
+  }
+
+  html .header-section .nav-right li.line-icon {
+    display: none;
+  }
+
+  html .header-section .nav-right li.youtube-icon {
+    display: none;
+  }
+
+  html .header-section .nav-right li.register {
+    display: none;
+  }
+
+  html .header-section .nav-right li.login {
+    margin-right: 0rem;
+  }
+
+  html .header-section .logo a > img {
+    max-width: 180px;
+    padding: 0.5rem 0;
+  }
 }
 
 .footer {
