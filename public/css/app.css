@@ -17779,7 +17779,7 @@ html .header-section .nav-item .nav-menu li.active a {
   background: #f6993f;
 }
 
-html .header-section .nav-item .nav-menu li:nth-child(1) {
+html .header-section .nav-item .nav-menu li:nth-child(1) > a {
   border-left: 3px solid #f6993f;
 }
 
@@ -17815,6 +17815,8 @@ html .header-section .nav-item .nav-menu li .dropdown {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  padding: 1px;
+  text-align: center;
 }
 
 html .header-section .nav-item .nav-menu li .dropdown li {
@@ -17829,8 +17831,13 @@ html .header-section .nav-item .nav-menu li .dropdown li:hover > a {
 
 html .header-section .nav-item .nav-menu li .dropdown li a {
   border-right: 0;
-  padding: 13px 20px 12px 30px;
+  padding: 13px 20px 12px 20px;
   text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+html .header-section .slicknav_menu {
+  display: none;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
@@ -17880,25 +17887,30 @@ html .header-section .nav-item .nav-menu li .dropdown li a {
     display: block;
     background: transparent;
     text-align: center;
-    margin-top: -48px;
+    position: absolute;
+    top: 8px;
+    left: -14px;
   }
 
   html .header-section .slicknav_nav {
+    position: relative;
     background: #333;
+    z-index: 999;
   }
 
   html .header-section .slicknav_nav ul {
     margin: 0;
     text-align: left;
+    margin-left: 1rem;
+  }
+
+  html .header-section .slicknav_nav ul li {
+    border-bottom: 1px solid #fff;
   }
 
   html .header-section .slicknav_nav a,
   html .header-section .slicknav_nav .slicknav_row {
     margin: 0;
-  }
-
-  html .header-section .slicknav_nav .dropdown a {
-    padding-left: 25px;
   }
 
   html .header-section .nav-item .nav-depart {
@@ -17907,7 +17919,7 @@ html .header-section .nav-item .nav-menu li .dropdown li a {
 
   html .header-section .slicknav_btn {
     border-radius: 0;
-    background-color: #e7ab3c;
+    background-color: #f6993f;
     display: inline-block;
     right: -16px;
   }
@@ -17956,6 +17968,7 @@ html .header-section .nav-item .nav-menu li .dropdown li a {
   html .header-section .logo a > img {
     max-width: 160px;
     padding: 0.5rem 0;
+    margin-left: 28px;
   }
 }
 

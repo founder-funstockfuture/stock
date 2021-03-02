@@ -76,7 +76,7 @@ html {
             background: $fun-orange;
           }
 
-          &:nth-child(1){
+          &:nth-child(1)> a{
             border-left: 3px solid $fun-orange;
           }
 
@@ -116,6 +116,9 @@ html {
             -webkit-transition: all .3s;
             -o-transition: all .3s;
             transition: all .3s;
+
+            padding: 1px;
+            text-align: center;
             li {
               display: block;
               margin-left: 0;
@@ -127,8 +130,9 @@ html {
               }
               a {
                 border-right: 0;
-                padding: 13px 20px 12px 30px;
+                padding: 13px 20px 12px 20px;
                 text-transform: capitalize;
+                font-size: 1.2rem;
               }
             }
           }
@@ -136,13 +140,10 @@ html {
       }
 
 
+    }
 
-
-
-
-
-
-
+    .slicknav_menu {
+      display: none;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1920px) {
@@ -204,13 +205,22 @@ html {
         display: block;
         background: transparent;
         text-align: center;
-        margin-top: -48px;
+        position: absolute;
+        top: 8px;
+        left: -14px;
+
       }
       .slicknav_nav {
+        position: relative;
         background: #333;
+        z-index: 999;
         ul {
           margin: 0;
           text-align: left;
+          margin-left: 1rem;
+          li{
+            border-bottom: 1px solid #fff;
+          }
         }
         a,
         .slicknav_row {
@@ -218,7 +228,7 @@ html {
         }
         .dropdown {
           a {
-            padding-left: 25px;
+            //padding-left: 25px;
           }
         }
       }
@@ -227,7 +237,7 @@ html {
       }
       .slicknav_btn {
         border-radius: 0;
-        background-color: #e7ab3c;
+        background-color: $fun-orange;
         display: inline-block;
         right: -16px;
       }
@@ -270,8 +280,9 @@ html {
       .logo {
 
         a>img{
-          max-width:160px;
-          padding:0.5rem 0;
+          max-width: 160px;
+          padding: 0.5rem 0;
+          margin-left: 28px;
         }
 
 

@@ -41,7 +41,10 @@
 
   <script>
     $(".mobile-menu").slicknav({
+        label: '',
         prependTo: '#mobile-menu-wrap',
+        'duplicate': true,
+        'showChildren': false,
         allowParentLinks: true
     });
 
