@@ -37,8 +37,45 @@
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
-  
   @yield('scriptsAfterJs')
+
+  <script>
+    $(".mobile-menu").slicknav({
+        prependTo: '#mobile-menu-wrap',
+        allowParentLinks: true
+    });
+
+    $(function () { 
+        $('#mobile-search').popover({
+            placement: 'bottom',
+            title: '搜尋代號/名稱',
+            content: $('#search-form-content').html(),
+            html: true,
+            sanitize : false
+        }).on('click', function(){
+            // had to put it within the on click action so it grabs the correct info on submit
+            $('.popover-body').on("click", "#search-form-button" , function() {
+                alert($('.popover-body #search-form-input').val());
+            /*
+            $.post('/echo/html/',  {
+                searchValue: $('#search-form-input').val(),
+            }, function(r){
+                $('#pops').popover('hide')
+                $('#result').html('resonse from server could be here' )
+            })
+                */
+
+
+            })
+        })
+
+    })
+
+
+
+  </script>
+
+
 
 </body>
 

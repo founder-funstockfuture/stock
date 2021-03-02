@@ -9,13 +9,17 @@
                     </div>
                 </div>
                 <div class="col-10 col-md-9 d-inline-flex flex-row-reverse align-self-end">
+                    <div id="search-form-content" class="d-none">
+                        <div class="form-group">
+                            <input id="search-form-input" type="text" class="form-control"/>
+                        </div>
+                        <button id="search-form-button" type="button" class="btn btn-sm btn-outline-info" data-loading-text="傳送資料..">搜尋</button>
+                    </div>
                     <ul class="nav-right">
-                        <li class="fb-search d-xs-block d-sm-block d-md-none">
-                            <div>
-                                <a href="javascript:;">
-                                    <img src="img/search.png" alt="">
-                                </a>
-                            </div>
+                        <li class="search-icon d-xs-block d-sm-block d-md-none">
+                            <a id="mobile-search">
+                                <img src="img/search.png" alt="">
+                            </a>
                         </li>
                         <li class="fb-icon">
                             <a href="./index.html">
@@ -48,9 +52,10 @@
                             <button type="button" class="btn btn-outline-warning">註冊</button></li>
                     </ul>
                     
-                    <div class="search-bar">
+                    <div class="search-bar mr-4">
                         <div class="input-group">
-                            <input class="form-control py-2" type="search" id="search-input">
+                            <input class="form-control py-2" type="search" id="search-input" 
+                            placeholder="輸入代號/名稱、文章、影音、新聞......">
                             <span class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button">
                                     <i class="fa fa-search"></i>
@@ -94,16 +99,4 @@
         </div>
 
     </header>
-
-
-@section('scriptsAfterJs')
-  <script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
-
-  <script>
-    $(".mobile-menu").slicknav({
-        prependTo: '#mobile-menu-wrap',
-        allowParentLinks: true
-    });
-
-  </script>
-@stop
+    
