@@ -329,7 +329,9 @@
         }
     
         @media #{$breakpoint-xs} {
-            height: 400px;
+            height: 213px;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     
         &::before {

@@ -10,6 +10,13 @@
                 </div>
                 <div class="col-10 col-md-9 d-inline-flex flex-row-reverse align-self-end">
                     <ul class="nav-right">
+                        <li class="fb-search d-xs-block d-sm-block d-md-none">
+                            <div>
+                                <a href="javascript:;">
+                                    <img src="img/search.png" alt="">
+                                </a>
+                            </div>
+                        </li>
                         <li class="fb-icon">
                             <a href="./index.html">
                                 <img src="img/fb-icon.png" alt="">

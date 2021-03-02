@@ -17361,7 +17361,9 @@ readers do not read off random characters that represent icons */
 
 @media only screen and (max-width:767px) {
   .root-page .section-new-video .single-feature-post.video-post {
-    height: 400px;
+    height: 213px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -17754,7 +17756,7 @@ html .header-section .inner-header .nav-right li {
   list-style: none;
   display: inline-block;
   font-size: 1.2rem;
-  margin-left: 0.5rem;
+  margin-left: 0.1rem;
 }
 
 html .header-section .nav-item {
@@ -17855,7 +17857,13 @@ html .header-section .nav-item .nav-menu li .dropdown li a {
   }
 
   html .header-section .nav-item .nav-menu li a {
-    padding: 16px 10px 15px;
+    padding: 2px 4px;
+  }
+
+  html .header-section .logo a > img {
+    max-width: 160px;
+    margin-left: -2rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -17946,7 +17954,7 @@ html .header-section .nav-item .nav-menu li .dropdown li a {
   }
 
   html .header-section .logo a > img {
-    max-width: 180px;
+    max-width: 160px;
     padding: 0.5rem 0;
   }
 }

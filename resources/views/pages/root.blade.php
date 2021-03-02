@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-12">
         <div class="notice-bar">
-          <div class="w-75 ml-2 py-1 text-center">
+          <div class="w-80 ml-2 py-1 text-center">
               <img src="img/news-icon.png" alt="">
               <span class="text-danger">即時消息</span> 2021/02/08交易所休市(辦理結算交割) 2021/02/20 補上班但交易所不交易
           </div>
