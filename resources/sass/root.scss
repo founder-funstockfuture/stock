@@ -661,8 +661,184 @@
     }
 
 
+    .treasure-map{
+        .table-title{
+            background-color: #F47209;
+            border-radius: 0;
+            font-family: arial;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.15rem;
+            padding: 5px 0;
+        }
+
+      .table {
+        th{
+            text-align: right;
+            border-bottom: 2px solid #ddd;
+            &:first-child{
+                text-align: left;
+            }
+            &:nth-child(2){
+                text-align: center;
+            }
+        }
+
+        td{
+            color:#333333;
+            text-align: right;
+            font-family: Arial;
+            border-bottom: 2px solid #ddd;
+            line-height: 1.6rem;
+            &:nth-child(1){
+                font-weight: 600;
+            }
+            &:nth-child(2){
+                text-align: center;
+                span{
+                    color:#bbb;
+                }
+            }
+            &:nth-child(3){
+                color:#BC0614;
+            }
+
+        }
+      }
+
+      
+    }
 
 
+
+    .major-investor{
+        .table-title{
+            background-color: #868686;
+            border-radius: 0;
+            font-family: arial;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.15rem;
+            padding: 5px 0;
+        }
+
+      .table {
+        th{
+            text-align: right;
+            border-bottom: 2px solid #ddd;
+            &:first-child{
+                text-align: left;
+            }
+        }
+
+        td{
+            color:#333333;
+            text-align: right;
+            font-family: Arial;
+            border-bottom: 2px solid #ddd;
+            line-height: 1.6rem;
+            &:nth-child(1){
+                font-weight: 600;
+            }
+
+        }
+      }
+
+      .unit-tag {
+        font-family: Arial;
+        line-height: 1.3rem;
+        font-weight: 600;
+        position: absolute;
+        top: 25PX;
+        right: 10px;
+        color: #868686;
+        transition: 0.5s ease;
+        opacity: 1;
+        font-size: 1rem;
+        padding: 5px;
+        text-align: center;
+
+        @media (max-width: 767.98px) {
+            top: 12PX;
+            right: -12px;
+            font-size: 0.8rem;
+        }
+
+
+      }
+      
+
+    }
+
+    .ustock-investor-buy,.ustock-investor-sell{
+        .table-title{
+            background-color: #868686;
+            border-radius: 0;
+            font-family: arial;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.15rem;
+            padding: 5px 0;
+        }
+
+        .table {
+            th{
+                text-align: right;
+                border-bottom: 2px solid #ddd;
+                &:first-child{
+                    text-align: left;
+                }
+                &:nth-child(2){
+                    text-align: center;
+                }
+            }
+
+            td{
+                color:#333333;
+                text-align: right;
+                font-family: Arial;
+                border-bottom: 2px solid #ddd;
+                line-height: 1.6rem;
+                &:nth-child(1){
+                    font-weight: 600;
+                }
+                &:nth-child(2){
+                    text-align: center;
+                    span{
+                        color:#bbb;
+                    }
+                }
+
+            }
+        }
+
+        .unit-tag {
+            font-family: Arial;
+            line-height: 1.3rem;
+            font-weight: 600;
+            position: absolute;
+            top: 25PX;
+            right: 10px;
+            color: #868686;
+            transition: 0.5s ease;
+            opacity: 1;
+            font-size: 1rem;
+            padding: 5px;
+            text-align: center;
+
+            @media (max-width: 767.98px) {
+                top: 12PX;
+                right: -12px;
+                font-size: 0.8rem;
+            }
+
+
+        }
+
+
+
+
+    }
 
 
 
