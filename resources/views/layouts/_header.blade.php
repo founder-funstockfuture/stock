@@ -114,10 +114,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">選股藏寶圖</a>
+                        <a class="nav-link no-ul" href="#" tabindex="-1" aria-disabled="true">選股藏寶圖</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">FUN商城</a>
+                        <a class="nav-link no-ul" href="#" tabindex="-1" aria-disabled="true">FUN商城</a>
                     </li>
 
                 </ul>

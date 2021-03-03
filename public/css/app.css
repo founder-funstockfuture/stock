@@ -18095,6 +18095,7 @@ html .header-section .slicknav_menu {
 @media only screen and (max-width: 767px) {
   html .header-section .nav-item {
     background: transparent;
+    display: block;
   }
 
   html .header-section .nav-item .nav-menu {
@@ -18107,7 +18108,8 @@ html .header-section .slicknav_menu {
     text-align: center;
     position: absolute;
     top: 8px;
-    left: -14px;
+    width: 100%;
+    padding: 0;
   }
 
   html .header-section .slicknav_nav {
@@ -18119,7 +18121,6 @@ html .header-section .slicknav_menu {
   html .header-section .slicknav_nav ul {
     margin: 0;
     text-align: left;
-    margin-left: 1rem;
   }
 
   html .header-section .slicknav_nav ul li {
@@ -18139,23 +18140,46 @@ html .header-section .slicknav_menu {
     border-radius: 0;
     background-color: #f6993f;
     display: inline-block;
-    right: -16px;
+    right: -5px;
+    margin: 9px 5px 16px;
   }
 
-  html .header-section .slicknav_nav .slicknav_row,
-  html .header-section .slicknav_nav a {
+  html .header-section .slicknav_nav .dropdown a {
+    padding-left: 2rem;
+  }
+
+  html .header-section .slicknav_nav .slicknav_row {
+    background-color: #fff;
+    border-top: 3px solid #F47209;
+  }
+
+  html .header-section .slicknav_nav .slicknav_row .slicknav_arrow {
+    color: #444;
+  }
+
+  html .header-section .slicknav_nav .slicknav_row .nav-link {
     padding: 8px 15px;
+    color: #444;
+    font-weight: bold;
+  }
+
+  html .header-section .slicknav_nav .no-ul {
+    background-color: #fff;
+    border-top: 3px solid #F47209;
+    color: #444;
+    padding: 5px 15px 5px 25px;
+    font-weight: bold;
   }
 
   html .header-section .slicknav_nav a:hover {
     border-radius: 0;
-    background: #e7ab3c;
+    background: #ecc986;
     color: #fff;
   }
 
   html .header-section .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
-    background: #e7ab3c;
+    background: #ecc986;
     color: #fff;
   }
 
@@ -18236,7 +18260,7 @@ footer .container .copyright-reserved .copyright-text a {
 }
 
 footer .container .copyright-reserved .copyright-text a:hover {
-  color: #e7ab3c;
+  color: #ecc986;
 }
 
 @media only screen and (max-width: 767px) {
