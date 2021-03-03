@@ -41,7 +41,7 @@ html {
 
       .nav-right {
         padding: 1rem 0;
-        
+        z-index: 100;
       }
       
       .nav-right li {
@@ -237,7 +237,7 @@ html {
       .slicknav_nav {
         position: relative;
         background: #333;
-        z-index: 999;
+        z-index: 99;
         ul {
           margin: 0;
           text-align: left;
