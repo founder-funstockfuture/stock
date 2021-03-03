@@ -480,248 +480,244 @@
 
 
   <div class="treasure-map mt-5">
-      <div class="container">
-        <div class="row">
-            <div class="col-12">
-              <div class="section-heading">
-                <h4>選股藏寶圖</h4>
-                <div class="line"></div>
-              </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="section-heading">
+            <h4>選股藏寶圖</h4>
+            <div class="line"></div>
             </div>
         </div>
+    </div>
 
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-6">
-                <div class="btn btn-block table-title">多方強勢股</div>
-                <table class="table table-sm table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">No.</th>
-                            <th scope="col">代號/名稱</th>
-                            <th scope="col">收盤價</th>
-                            <th scope="col">漲跌%</th>
-                            <th scope="col">創新高</th>
-                            <th scope="col">連續漲</th>
-                            <th scope="col">區間漲幅</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td><span>6747</span> 亨泰光</td>
-                            <td>200.5</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="col-md-12 col-lg-6">
-                <div class="btn btn-block table-title">空方強勢股</div>
-                <table class="table table-sm table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">No.</th>
-                            <th scope="col">代號/名稱</th>
-                            <th scope="col">收盤價</th>
-                            <th scope="col">漲跌%</th>
-                            <th scope="col">創新高</th>
-                            <th scope="col">連續漲</th>
-                            <th scope="col">區間漲幅</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td><span>6747</span> 亨泰光</td>
-                            <td>200.5</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td><span>3178</span> 公準</td>
-                            <td>36.5</td>
-                            <td>1%</td>
-                            <td>534</td>
-                            <td>2</td>
-                            <td>1%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10</th>
-                            <td><span>3138</span>  輝登</td>
-                            <td>308</td>
-                            <td>1%</td>
-                            <td>2123</td>
-                            <td>4</td>
-                            <td>5%</td>
-                        </tr>
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-5">
+            <div class="btn btn-block table-title">多方強勢股</div>
+            <table class="table table-sm table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">代號/名稱</th>
+                        <th scope="col">收盤價</th>
+                        <th scope="col">漲跌%</th>
+                        <th scope="col">創新高</th>
+                        <th scope="col">連續漲</th>
+                        <th scope="col">區間漲幅</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><span>6747</span> 亨泰光</td>
+                        <td>200.5</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
 
 
-                    </tbody>
-                </table>
-            </div>
-
+                </tbody>
+            </table>
         </div>
 
-      </div>
+        <div class="col-md-12 col-lg-5">
+            <div class="btn btn-block table-title">空方強勢股</div>
+            <table class="table table-sm table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">代號/名稱</th>
+                        <th scope="col">收盤價</th>
+                        <th scope="col">漲跌%</th>
+                        <th scope="col">創新高</th>
+                        <th scope="col">連續漲</th>
+                        <th scope="col">區間漲幅</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><span>6747</span> 亨泰光</td>
+                        <td>200.5</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td><span>3178</span> 公準</td>
+                        <td>36.5</td>
+                        <td>1%</td>
+                        <td>534</td>
+                        <td>2</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td><span>3138</span>  輝登</td>
+                        <td>308</td>
+                        <td>1%</td>
+                        <td>2123</td>
+                        <td>4</td>
+                        <td>5%</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
 
   </div>
 
 
   <div class="major-investor mt-5">
-      <div class="container">
         <div class="row">
             <div class="col-12">
               <div class="section-heading">
@@ -733,7 +729,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-6">
+            <div class="col-md-12 col-lg-5">
                 <div class="btn btn-block table-title">上市</div>
                 <table class="table table-hover">
                     <thead>
@@ -773,7 +769,7 @@
                 </table>
             </div>
 
-            <div class="col-md-12 col-lg-6">
+            <div class="col-md-12 col-lg-5">
                 <div class="btn btn-block table-title">上櫃</div>
                 <table class="table table-hover">
                     <thead>
@@ -815,14 +811,11 @@
 
         </div>
 
-      </div>
-
   </div>
 
 
 
   <div class="ustock-investor-buy mt-5">
-      <div class="container">
         <div class="row">
             <div class="col-12">
               <div class="section-heading">
@@ -834,7 +827,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="btn btn-block table-title">外資</div>
                 <table class="table table-sm table-hover">
                     <thead>
@@ -911,7 +904,7 @@
                 </table>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="btn btn-block table-title">投信</div>
                 <table class="table table-sm table-hover">
                     <thead>
@@ -989,7 +982,7 @@
             </div>
 
 
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="btn btn-block table-title">自營商</div>
                 <table class="table table-sm table-hover">
                     <thead>
@@ -1069,13 +1062,11 @@
 
         </div>
 
-      </div>
 
   </div>
 
 
   <div class="ustock-investor-sell mt-5 mb-3">
-      <div class="container">
         <div class="row">
             <div class="col-12">
               <div class="section-heading">
@@ -1087,7 +1078,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="btn btn-block table-title">外資</div>
                 <table class="table table-sm table-hover">
                     <thead>
@@ -1164,7 +1155,7 @@
                 </table>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="btn btn-block table-title">投信</div>
                 <table class="table table-sm table-hover">
                     <thead>
@@ -1242,7 +1233,7 @@
             </div>
 
 
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="btn btn-block table-title">自營商</div>
                 <table class="table table-sm table-hover">
                     <thead>
@@ -1321,8 +1312,6 @@
 
 
         </div>
-
-      </div>
 
   </div>
 

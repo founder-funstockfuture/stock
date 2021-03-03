@@ -37,16 +37,11 @@
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.slicknav.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/topbutton.js') }}"></script>
   @yield('scriptsAfterJs')
 
   <script>
-    $(".mobile-menu").slicknav({
-        label: '',
-        prependTo: '#mobile-menu-wrap',
-        'duplicate': true,
-        'showChildren': false,
-        allowParentLinks: true
-    });
+
 
     $(function () { 
         $('#mobile-search').popover({
@@ -71,6 +66,22 @@
 
             })
         })
+
+        $(".mobile-menu").slicknav({
+            label: '',
+            prependTo: '#mobile-menu-wrap',
+            allowParentLinks: true,
+        });
+
+        $.topbutton({
+            html : '<i class="fas fa-2x fa-chevron-up"></i><br>Top',
+            css : "width:60px; height:60px; background:#F47209;border-radius:50%; border:none; font-size:16px;line-height:1rem;bottom:45px;z-index:9999;",
+            scrollAndShow :true,
+            // default: 150
+            scrollSpeed : 300
+
+        });
+
 
     })
 

@@ -16,7 +16,7 @@
                         <button id="search-form-button" type="button" class="btn btn-sm btn-outline-info" data-loading-text="傳送資料..">搜尋</button>
                     </div>
                     <ul class="nav-right">
-                        <li class="search-icon d-xs-block d-sm-block d-md-none">
+                        <li class="search-icon d-xs-block d-sm-none">
                             <a id="mobile-search">
                                 <img src="img/search.png" alt="">
                             </a>
