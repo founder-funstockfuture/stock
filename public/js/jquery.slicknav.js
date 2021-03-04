@@ -192,7 +192,7 @@
                     arrowElement = arrowElement.wrap(wrapElement).parent();
 
                 //append arrow
-                $(nodes).last().after(arrowElement);
+                //$(nodes).last().after(arrowElement);
 
 
             } else if ( item.children().length === 0) {
@@ -203,9 +203,9 @@
             item.children('a').attr('role', 'menuitem').click(function(event){
                 //Ensure that it's not a parent
                 if (settings.closeOnClick && !$(event.target).parent().closest('li').hasClass(prefix+'_parent')) {
-                        //Emulate menu close if set
-                        $($this.btn).click();
-                    }
+                    //Emulate menu close if set
+                    $($this.btn).click();
+                }
             });
 
             //also close on click if parent links are set
@@ -252,10 +252,18 @@
         });
 
         // click on menu parent
-        $this.mobileNav.on('click', '.' + prefix + '_item', function (e) {
+        //$this.mobileNav.on('click', '.' + prefix + '_item', function (e) {
+        //    e.preventDefault();
+        //    $this._itemClick($(this));
+        //});
+
+        $this.mobileNav.on('click', 'a', function (e) {
             e.preventDefault();
             $this._itemClick($(this));
         });
+
+
+
 
         // check for keyboard events on menu button and menu parents
         $($this.btn).keydown(function (e) {
@@ -391,6 +399,11 @@
             data.parent.addClass(prefix+'_animating');
             $this._visibilityToggle(data.ul, data.parent, true, el);
         }
+
+
+
+
+        
     };
 
     // toggle actual visibility and accessibility tags

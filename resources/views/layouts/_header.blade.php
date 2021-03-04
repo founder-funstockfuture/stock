@@ -72,7 +72,7 @@
             <nav class="nav-menu navbar mobile-menu">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">航海日誌</a>
+                        <a class="nav-link active" href="javascript:;">航海日誌</a>
                             <ul class="dropdown">
                                 <li><a href="#">最新好文</a></li>
                                 <li><a href="#">熱門好文</a></li>

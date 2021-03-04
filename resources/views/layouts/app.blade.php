@@ -70,7 +70,7 @@
         $(".mobile-menu").slicknav({
             label: '',
             prependTo: '#mobile-menu-wrap',
-            allowParentLinks: true,
+            allowParentLinks: false,
         });
 
         $.topbutton({
