@@ -139,4 +139,4 @@ Route::post('payment/ecpay/notify', 'PaymentController@ecpayNotify')->name('paym
 
 
 
-Route::get('test', 'VerificationCodesController@test');
+//Route::get('test', 'VerificationCodesController@test');

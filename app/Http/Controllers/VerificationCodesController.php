@@ -16,6 +16,8 @@ use GuzzleHttp\Client;
 
 class VerificationCodesController extends Controller
 {
+    use \App\Models\Traits\CmoneyHelper;
+
 
     // 1.接收輸入的手機號碼。要存在 Cache 中。
     public function storeMobile(VerificationMobileRequest $request)
@@ -147,93 +149,6 @@ class VerificationCodesController extends Controller
         }
 
     }
-
-
-    
-    // cmoney 取值
-    public function test(Request $request){
-        $table_name='券商進出個股明細';
-
-        $client = new Client;
-        $url=env('CMONEY_DATABASE_URL');
-        $cmoney_column_names=$this->getCmoneyColumnNames($table_name);
-        $funstock_column_names=$this->getFunstockColumnNames('ch_dealer_io_details');
-        
-        $sql="SELECT top 2 * FROM 券商進出個股明細 WHERE 日期='20200408'";
-        $table_name=["$table_name"];
-
-        $response = $client->request('POST', $url, ['json' => [
-            'FormatSQL' => $sql,
-            'TableNames' => $table_name,
-        ]]);
-        
-        $result_all = json_decode($response->getBody(), true);
-        $result_rows = json_decode($result_all['ResultValue'],true);
-        
-        $insert_data=[];
-        $funstock_column_count=count($funstock_column_names);
-        foreach($result_rows as $val){
-            $temp_array=[];
-            for($i=0;$i<$funstock_column_count;$i++){
-                $temp_array[$funstock_column_names[$i]]=$val[$cmoney_column_names[$i]];
-            }
-
-            $insert_data[] = $temp_array;
-        }
-
-
-        \DB::connection('mysql_twse')->table('ch_dealer_io_details')->insert($insert_data);
-
-
-        return $insert_data;
-    }
-
-
-
-    private function getCmoneyColumnNames($table_name){
-
-        $client = new Client;
-
-        $url=env('CMONEY_DATABASE_URL');
-
-        // 取表格欄位
-        $sql="SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$table_name}'";
-        $response = $client->request('POST', $url, ['json' => [
-            'FormatSQL' => $sql,
-            'TableNames' => ["$table_name"],
-        ]]);
-        $result_all = json_decode($response->getBody(), true);
-        $result_rows = json_decode($result_all['ResultValue'], true);
-
-        $data=[];
-        foreach($result_rows as $val){
-            $data[] =$val['COLUMN_NAME'];
-        }
-
-        return $data;
-    }
-
-
-    private function getFunstockColumnNames($table_name){
-
-        $db_data = \DB::connection('mysql_twse')->select("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$table_name}'");
-
-        $data=[];
-
-        // 移除不需要輸入資料的欄位
-        $i=0;
-        foreach($db_data as $val){
-            if($i==0 || $i==count($db_data)-1 || $i==count($db_data)-2){
-                $i++;
-                continue;
-            }
-            $data[] =$val->COLUMN_NAME;
-            $i++;
-        }
-
-        return $data;
-    }
-
 
 
 
