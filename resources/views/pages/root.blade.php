@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '首頁')
+@section('title', '首頁123')
 
 @section('content')
   <div class="container d-none d-md-block">
