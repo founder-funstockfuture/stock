@@ -5,13 +5,14 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use GuzzleHttp\Client;
 use DB;
+use App\Jobs\ImportDataFromCmoney;
+
 
 class SyncCmoneyDatabases extends Command
 {
     use \App\Models\Traits\CmoneyHelper;
 
-
-    protected $signature = 'cmoney {to_database} {from_table} {to_table} {ym} {--d=10}';
+    protected $signature = 'cmoney {to_database} {from_table} {to_table} {y} {--m=01} {--d=10} {--d_name=日期}';
 
     protected $description = '將 Cmoney資料庫指定表格資料 匯入 funstock資料庫';
 
@@ -32,28 +33,77 @@ class SyncCmoneyDatabases extends Command
         // $to_table='ch_dealer_io_details';
         $to_table = $this->argument('to_table');
         // 取值的年月
-        $ym = $this->argument('ym');
+        $y = $this->argument('y');
+        $m = $this->option('m');
+        $d = $this->option('d');
+
+        // 依參數判斷
+        $date_column_name=$this->option('d_name');
+
+        switch($date_column_name){
+            case"日期":
+                $ymd_php_format=$y.'-'.$m.'-'.$d;
+
+                if($m && $d){
+                    $sql="SELECT * FROM $from_table WHERE $date_column_name='$y$m$d'";
+                    // 匯入前先刪資料
+                    DB::connection('mysql_'.$to_database)->table($to_table)
+                    ->where('data_date', '=', $ymd_php_format)->delete();
         
-        //若無日期
-        if($d=$this->option('d')){
-            $ymd=$ym.$d;
-            $sql="SELECT * FROM $from_table WHERE 日期='$ymd'";
-            $ymd_php_format=substr($ym,0,4).'-'.substr($ym,4,2).'-'.$d;
-            // 匯入前先刪資料
-            DB::connection('mysql_'.$to_database)->table($to_table)
-            ->where('data_date', '=', $ymd_php_format)->delete();
+                }elseif($m){
+                    $ymd_php_format=$y.'-'.$m;
+                    $specify_month_start = $y.$m;
+                    $specify_month_end = $y.$m;
+                    $specify_month_start_php_format = $y.'-'.$m.'-01';
+                    $specify_month_end_php_format=date("Y-m-t", $y.'-'.$m.'-01');
 
-        }else{
-            $specify_month_start = $ym.'01';
-            $specify_month_end = date("Ymt", strtotime(substr($ym,0,4).'-'.substr($ym,4,2).'-01'));
-            $specify_month_start_php_format = substr($ym,0,4).'-'.substr($ym,4,2).'-01';
-            $specify_month_end_php_format=date("Y-m-t", strtotime(substr($ym,0,4).'-'.substr($ym,4,2).'-01'));
+                    // 有月無日
+                    $sql="SELECT * FROM $from_table WHERE $date_column_name>='$specify_month_start' AND $date_column_name<='$specify_month_end' ";
+                    // 匯入前先刪資料
+                    DB::connection('mysql_'.$to_database)->table($to_table)->where('data_date', '>=', $specify_month_start_php_format)
+                    ->where('data_date', '<=', $specify_month_end_php_format)->delete();
+        
+                }else{
+                    $this->info("欄位選擇「日期」，需填月份參數");
+                }
 
-            $sql="SELECT * FROM $from_table WHERE 日期>='$specify_month_start' AND 日期<='$specify_month_end' ";
-            // 匯入前先刪資料
-            DB::connection('mysql_'.$to_database)->table($to_table)->where('data_date', '>=', $specify_month_start_php_format)
-            ->where('data_date', '<=', $specify_month_end_php_format)->delete();
+
+                break;
+            case"年月":
+                if($m){
+                    $ymd_format=$y.$m;
+                    $sql="SELECT * FROM $from_table WHERE $date_column_name='$ymd_format'";
+                    // 匯入前先刪資料
+                    DB::connection('mysql_'.$to_database)->table($to_table)
+                    ->where('data_date', '=', $ymd_format)->delete();
+        
+                }else{
+                    $specify_month_start = $y.'01';
+                    $specify_month_end = $y.'12';
+
+                    //無月份
+                    $sql="SELECT * FROM $from_table WHERE $date_column_name>='$specify_month_start' AND $date_column_name<='$specify_month_end' ";
+                    // 匯入前先刪資料
+                    DB::connection('mysql_'.$to_database)->table($to_table)->where('data_date', '>=', $specify_month_start)
+                    ->where('data_date', '<=', $specify_month_end)->delete();
+        
+                }
+
+                break;
+            case"年度":
+                //若無月份或日期
+                $sql="SELECT * FROM $from_table WHERE $date_column_name='$y'";
+
+                // 匯入前先刪資料
+                DB::connection('mysql_'.$to_database)->table($to_table)
+                    ->where('data_date', '=', $y)->delete();
+
+            break;
+
         }
+
+
+        
 
         $client = new Client;
         $url=env('CMONEY_DATABASE_URL');
@@ -87,8 +137,10 @@ class SyncCmoneyDatabases extends Command
                 $insert_data[] = $temp_array;
                 // 當滿 2000 筆，儲存到資料庫
                 // 不足 2000 筆，最後一次迴圈要存到資料庫
-                if($j==3500 || $all_data_count==1){
-                    DB::connection('mysql_'.$to_database)->table($to_table)->insert($insert_data);
+                if($j==2000 || $all_data_count==1){
+                    //DB::connection('mysql_'.$to_database)->table($to_table)->insert($insert_data);
+                    dispatch(new ImportDataFromCmoney($to_database,$to_table,$insert_data));
+
                     $j=0;
                     $insert_data=[];
                 }
@@ -96,17 +148,13 @@ class SyncCmoneyDatabases extends Command
                 $all_data_count--;
             }
     
-            //DB::connection('mysql_twse')->table($to_table)->insert($insert_data);
-    
-            $this->info("同步[".$from_table."]到[".$to_table.']，資料來源日期'.$ym.$d);
+            $this->info("同步[".$from_table."]到[".$to_table.']，資料來源日期'.$y.$m.$d);
     
 
         }else{
             $this->info('無資料!!');
 
         }
- 
-
 
     }
 }
