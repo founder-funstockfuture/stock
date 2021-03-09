@@ -16,7 +16,7 @@ trait CmoneyHelper
         $url=env('CMONEY_DATABASE_URL');
 
         // 取表格欄位
-        $sql="SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$table_name}'";
+        $sql="SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$table_name}' ORDER BY ordinal_position";
         $response = $client->request('POST', $url, ['json' => [
             'FormatSQL' => $sql,
             'TableNames' => ["$table_name"],
@@ -35,7 +35,7 @@ trait CmoneyHelper
 
     private function getFunstockColumnNames($table_name){
 
-        $db_data = DB::connection('mysql_twse')->select("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$table_name}'");
+        $db_data = DB::connection('mysql_twse')->select("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{$table_name}' ORDER BY ordinal_position");
 
         $data=[];
 

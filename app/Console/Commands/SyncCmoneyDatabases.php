@@ -12,7 +12,7 @@ class SyncCmoneyDatabases extends Command
 {
     use \App\Models\Traits\CmoneyHelper;
 
-    protected $signature = 'cmoney {to_database} {from_table} {to_table} {y} {--m=01} {--d=10} {--d_name=日期}';
+    protected $signature = 'cmoney {to_database} {from_table} {to_table} {y} {--m=00} {--d=00} {--d_name=日期}';
 
     protected $description = '將 Cmoney資料庫指定表格資料 匯入 funstock資料庫';
 
@@ -44,18 +44,18 @@ class SyncCmoneyDatabases extends Command
             case"日期":
                 $ymd_php_format=$y.'-'.$m.'-'.$d;
 
-                if($m && $d){
+                if($m!='00' && $d!='00'){
                     $sql="SELECT * FROM $from_table WHERE $date_column_name='$y$m$d'";
                     // 匯入前先刪資料
                     DB::connection('mysql_'.$to_database)->table($to_table)
                     ->where('data_date', '=', $ymd_php_format)->delete();
         
-                }elseif($m){
+                }elseif($m!='00'){
                     $ymd_php_format=$y.'-'.$m;
-                    $specify_month_start = $y.$m;
-                    $specify_month_end = $y.$m;
+                    $specify_month_start = $y.$m.'01';
+                    $specify_month_end = date("Ymt", strtotime($y.$m.'01'));
                     $specify_month_start_php_format = $y.'-'.$m.'-01';
-                    $specify_month_end_php_format=date("Y-m-t", $y.'-'.$m.'-01');
+                    $specify_month_end_php_format=date("Y-m-t", strtotime($y.$m.'01'));
 
                     // 有月無日
                     $sql="SELECT * FROM $from_table WHERE $date_column_name>='$specify_month_start' AND $date_column_name<='$specify_month_end' ";
@@ -70,7 +70,7 @@ class SyncCmoneyDatabases extends Command
 
                 break;
             case"年月":
-                if($m){
+                if($m!='00'){
                     $ymd_format=$y.$m;
                     $sql="SELECT * FROM $from_table WHERE $date_column_name='$ymd_format'";
                     // 匯入前先刪資料
@@ -131,6 +131,16 @@ class SyncCmoneyDatabases extends Command
                 
                 $temp_array=[];
                 for($i=0;$i<$funstock_column_count;$i++){
+					/*if($funstock_column_names[$i]=='data_date'){
+						$temp_date=$val[$cmoney_column_names[$i]];
+						if(strlen($temp_date)==8){
+							$val[$cmoney_column_names[$i]]=date("Y-m-d", strtotime($temp_date));
+							
+						}else if(strlen($temp_date)==6){
+							$val[$cmoney_column_names[$i]]=date("Y-m", strtotime($temp_date));
+						}
+					}*/
+
                     $temp_array[$funstock_column_names[$i]]=$val[$cmoney_column_names[$i]];
                 }
     
